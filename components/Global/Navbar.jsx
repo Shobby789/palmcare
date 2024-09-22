@@ -22,7 +22,7 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          href="/about-us"
+          href="/about"
           className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
         >
           About

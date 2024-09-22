@@ -20,10 +20,10 @@ const AboutSection = () => {
     <section className="w-full vertical-padding horizontal-padding">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="flex items-center gap-5">
-          <img
-            src={
-              "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/about-2-2-1.jpeg"
-            }
+          <Image
+            width={349}
+            height={240}
+            src={"/assets/about-image-1.jpg"}
             className="h-[240px] md:h-[340px] w-[48%] object-cover"
           />
           <img
