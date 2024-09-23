@@ -10,7 +10,7 @@ export const metadata = {
 const page = () => {
   return (
     <div>
-      <AboutUsHero heading={"Upcoming Events"} />
+      <AboutUsHero heading={"Events"} />
       <EventGrid />
     </div>
   );

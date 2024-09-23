@@ -13,7 +13,7 @@ const DonationCauseCard = () => {
         <img
           src="https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
           alt=""
-          className="w-full h-[240px] object-cover"
+          className="w-full h-[240px] lg:h-[300px] object-cover"
         />
       </div>
       <div className="w-full relative px-5 pt-20 lg:pt-14 pb-5">
@@ -26,30 +26,30 @@ const DonationCauseCard = () => {
             <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2.5">
               <div class="bg-yellow-400 h-1.5 rounded-full w-[80%]"></div>
             </div>
-            <p className="quicksand-fonts text-xs md:text-sm font-medium">
+            <p className="quicksand-fonts text-sm md:text-lg font-semibold">
               $556.00 Donated of $6000.00 Goals
             </p>
           </div>
         </div>
-        <h2 className="text-base font-bold mb-3">
+        <h2 className="text-base lg:text-xl font-bold mb-3">
           Help Differently Abled Person to Feel Confident
         </h2>
         <div className="w-full border-t grid grid-cols-3 lg:grid-cols-5 gap-2 py-3">
           <div className="flex flex-col gap-1">
-            <span className="quicksand-fonts font-bold text-[14px]">Goal</span>
-            <span className="quicksand-fonts font-bold text-[14px]">$1000</span>
+            <span className="quicksand-fonts font-bold text-[18px]">Goal</span>
+            <span className="quicksand-fonts font-bold text-[18px]">$1000</span>
           </div>
           <div className="w-[1.5px] h-[45px] bg-gray-100 hidden lg:block"></div>
           <div className="flex flex-col gap-1">
-            <span className="quicksand-fonts font-bold text-[14px]">
+            <span className="quicksand-fonts font-bold text-[18px]">
               Raised
             </span>
-            <span className="quicksand-fonts font-bold text-[14px]">$1000</span>
+            <span className="quicksand-fonts font-bold text-[18px]">$1000</span>
           </div>
           <div className="w-[1.5px] h-[45px] bg-gray-100 hidden lg:block"></div>
           <div className="flex flex-col gap-1">
-            <span className="quicksand-fonts font-bold text-[14px]">To Go</span>
-            <span className="quicksand-fonts font-bold accent text-[14px]">
+            <span className="quicksand-fonts font-bold text-[18px]">To Go</span>
+            <span className="quicksand-fonts font-bold accent text-[18px]">
               $1000
             </span>
           </div>

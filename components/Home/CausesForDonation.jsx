@@ -20,8 +20,8 @@ const CausesForDonation = () => {
             Popular Causes
           </span>
         </div>
-        <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px] lg:w-1/2 text-center">
-          Give Donations For Latest Causes
+        <h2 className="section-heading text-center">
+          Give Donations For <br /> Latest Causes
         </h2>
       </div>
 

@@ -26,18 +26,18 @@ const AboutSection = () => {
       }`}
     >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="flex items-center gap-5">
+        <div className="flex items-center gap-6">
           <Image
             width={349}
             height={240}
             src={"/assets/about-image-1.jpg"}
-            className="h-[240px] md:h-[340px] w-[48%] object-cover"
+            className="h-[240px] md:h-[390px] w-[48%] object-cover"
           />
           <img
             src={
               "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
             }
-            className="h-[300px] md:h-[410px] w-[48%] object-cover"
+            className="h-[300px] md:h-full w-[48%] object-cover"
           />
         </div>
 
@@ -48,11 +48,11 @@ const AboutSection = () => {
               About logo
             </span>
           </div>
-          <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px]">
+          <h2 className="section-heading">
             Helping is Great Virtue for Every Human’s
           </h2>
           <p
-            className={`text-[13px] leading-5 ${
+            className={`text-[16px] leading-6 ${
               theme ? "text-[#fff]" : "text-[#2d2d2d]"
             }`}
           >
@@ -68,10 +68,10 @@ const AboutSection = () => {
               {charity_reasons.map((r, i) => {
                 return (
                   <div className="flex items-center gap-2" key={i}>
-                    <div className="w-4 h-4 bg-primary rounded-full p-1">
+                    <div className="w-5 h-5 bg-primary rounded-full p-1">
                       <FaCheck className="w-full h-full text-white" />
                     </div>
-                    <span className="text-[13px] leading-5 font-medium">
+                    <span className="text-[16px] leading-5 font-medium">
                       {r}
                     </span>
                   </div>
@@ -82,10 +82,10 @@ const AboutSection = () => {
               {charity_reasons2.map((r, i) => {
                 return (
                   <div className="flex items-center gap-2" key={i}>
-                    <div className="w-4 h-4 bg-primary rounded-full p-1">
+                    <div className="w-5 h-5 bg-primary rounded-full p-1">
                       <FaCheck className="w-full h-full text-white" />
                     </div>
-                    <span className="text-[13px] leading-5 font-medium">
+                    <span className="text-[16px] leading-5 font-medium">
                       {r}
                     </span>
                   </div>

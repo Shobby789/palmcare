@@ -14,16 +14,16 @@ const TeamMemberCard = ({ member, index }) => {
       <div className="w-full h-auto relative overflow-hidden">
         <img
           src={member?.image_url}
-          className="w-full h-[300px] object-cover"
+          className="w-full h-[300px] lg:h-[400px] object-cover"
         />
         <div className="w-full h-full absolute inset-0 z-10 bg-black text-white translate-y-full group-hover:translate-y-0 transition-all duration-500 opacity-75 flex items-center px-4">
-          <p className="text-sm font-medium opacity-100">{member?.bio}</p>
+          <p className="text-base font-medium opacity-100">{member?.bio}</p>
         </div>
       </div>
       <div className="w-full p-3">
-        <h2 className="font-bold text-xl accent">{member?.name}</h2>
+        <h2 className="font-bold text-xl lg:text-2xl accent">{member?.name}</h2>
         <h3
-          className={`text-[14px] font-medium ${
+          className={`text-[16px] font-semibold ${
             theme ? "text-gray-400" : "text-[#2d2d2d]"
           }`}
         >

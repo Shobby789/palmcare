@@ -63,7 +63,7 @@ const WhyDonateUs = () => {
               Why donate us
             </span>
           </div>
-          <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px]">
+          <h2 className="section-heading">
             We're So Much Trusted Charity Foundations
           </h2>
 
@@ -75,13 +75,15 @@ const WhyDonateUs = () => {
                   key={i}
                 >
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-[#F1C40F] rounded-full p-2.5 col-span-1 flex items-center icon-container">
+                    <div className="w-12 h-12 2xl:w-14 2xl:h-14 bg-[#F1C40F] rounded-full p-2.5 col-span-1 flex items-center icon-container">
                       {r.image}
                     </div>
                   </div>
                   <div className="">
-                    <h3 className="font-bold text-lg mb-2">{r.title}</h3>
-                    <span className="text-[13px] font-normal text-[#dcdcdc]">
+                    <h3 className="font-bold text-lg lg:text-2xl mb-2">
+                      {r.title}
+                    </h3>
+                    <span className="text-[16px] font-normal text-[#dcdcdc]">
                       {r.text}
                     </span>
                   </div>

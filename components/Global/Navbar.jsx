@@ -13,36 +13,38 @@ const Navbar = () => {
           alt=""
           className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
         /> */}
-        <span className={`font-semibold text-xl 2xl:text-3xl `}>logo</span>
+        <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl `}>
+          logo
+        </span>
       </Link>
       <div className="hidden lg:flex items-center gap-x-10">
         <Link
           href="/"
-          className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none`}
         >
           Home
         </Link>
         <Link
           href="/about"
-          className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none`}
         >
           About
         </Link>
         <Link
           href="/team"
-          className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none`}
         >
           Team
         </Link>
         <Link
           href="/projects"
-          className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none`}
         >
           Projects
         </Link>
         <Link
           href="/events"
-          className={`text-[13px] 2xl:text-[14px] font-medium outline-none`}
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none`}
         >
           Events
         </Link>

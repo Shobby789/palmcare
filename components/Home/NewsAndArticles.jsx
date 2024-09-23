@@ -21,9 +21,7 @@ const NewsAndArticles = () => {
             Articles News & Blog
           </span>
         </div>
-        <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px] text-center">
-          Latest News & Blog
-        </h2>
+        <h2 className="section-heading text-center">Latest News & Blog</h2>
       </div>
 
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">

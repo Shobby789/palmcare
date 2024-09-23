@@ -23,7 +23,7 @@ const EventsAndPrograms = () => {
             Events & Programs
           </span>
         </div>
-        <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px] text-center">
+        <h2 className="section-heading text-center">
           Latest Events & Programs
         </h2>
       </div>
@@ -36,37 +36,37 @@ const EventsAndPrograms = () => {
           {EVENTS_PROGRAMS.map((news, index) => {
             return (
               <div className="w-full flex items-start gap-4" key={index}>
-                <div className="w-[40%] h-[120px] overflow-hidden relative">
+                <div className="w-[40%] h-[150px] overflow-hidden relative">
                   <div className="bg-[#F1C40F] absolute top-0 px-2 pb-1 right-0 z-10">
-                    <span className="text-[10px] text-white font-medium">
+                    <span className="text-[13px] text-white font-medium">
                       {news.tag}
                     </span>
                   </div>
                   <img
                     src={news.image}
                     alt=""
-                    className="w-full object-cover h-[120px] hover:scale-110 transition-all duration-700 brightness-90"
+                    className="w-full object-cover h-[150px] hover:scale-110 transition-all duration-700 brightness-90"
                   />
                 </div>
-                <div className="flex flex-col items-start justify-center gap-2 pt-2.5">
+                <div className="flex flex-col items-start justify-center gap-3 pt-2.5">
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
-                      <SlCalender className="text-sm accent" />
-                      <span className="text-xs font-medium accent">
+                      <SlCalender className="text-base accent" />
+                      <span className="text-sm font-medium accent">
                         May 6, 2025
                       </span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <LuClock className="text-sm accent" />
-                      <span className="text-xs font-medium accent">
+                      <LuClock className="text-base accent" />
+                      <span className="text-sm font-medium accent">
                         08:00 AM
                       </span>
                     </div>
                   </div>
-                  <h2 className="font-bold text-base">{news.title}</h2>
+                  <h2 className="font-bold text-xl">{news.title}</h2>
                   <Link
                     href={"/"}
-                    className={`text-[13px] font-medium underline ${
+                    className={`text-[15px] font-medium underline ${
                       theme ? "text-gray-400" : "text-gray-600"
                     }`}
                   >

@@ -20,7 +20,7 @@ const StatisticsSection = () => {
             theme
               ? " border-gray-600 hover:border-[#F1C40F]"
               : "hover:border-[#F1C40F]"
-          } transition-all duration-300 px-5 py-10`}
+          } transition-all duration-300 px-5 py-14 2xl:py-16`}
         >
           <h2 className="text-3xl md:text-5xl font-bold accent">35+</h2>
           <span className="quicksand-fonts font-bold text-[16px]">
@@ -33,7 +33,7 @@ const StatisticsSection = () => {
             theme
               ? " border-gray-600 hover:border-[#F1C40F]"
               : "hover:border-[#F1C40F]"
-          } transition-all duration-300 px-5 py-10`}
+          } transition-all duration-300 px-5 py-14 2xl:py-16`}
         >
           <h2 className="text-3xl md:text-5xl font-bold accent">68+</h2>
           <span className="quicksand-fonts font-bold text-[16px]">
@@ -46,7 +46,7 @@ const StatisticsSection = () => {
             theme
               ? " border-gray-600 hover:border-[#F1C40F]"
               : "hover:border-[#F1C40F]"
-          } transition-all duration-300 px-5 py-10`}
+          } transition-all duration-300 px-5 py-14 2xl:py-16`}
         >
           <h2 className="text-3xl md:text-5xl font-bold accent">8k+</h2>
           <span className="quicksand-fonts font-bold text-[16px]">
@@ -59,7 +59,7 @@ const StatisticsSection = () => {
             theme
               ? " border-gray-600 hover:border-[#F1C40F]"
               : "hover:border-[#F1C40F]"
-          } transition-all duration-300 px-5 py-10`}
+          } transition-all duration-300 px-5 py-14 2xl:py-16`}
         >
           <h2 className="text-3xl md:text-5xl font-bold accent">93+</h2>
           <span className="quicksand-fonts font-bold text-[16px]">

@@ -52,30 +52,32 @@ const WhyDonateUs = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start justify-center gap-4 px-4 lg:pr-6 xl:pr-10 2xl:pr-40">
+        <div className="flex flex-col items-start justify-center gap-4 lg:gap-6 2xl:gap-9 px-4 lg:pr-6 xl:pr-10 2xl:pr-40">
           <div className="flex items-center gap-2">
             <FaHandHoldingHeart className="text-lg accent" />
             <span className="text-[18px] font-bold accent quicksand-fonts">
               Why donate us
             </span>
           </div>
-          <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px]">
+          <h2 className="section-heading">
             We're So Much Trusted Charity Foundations
           </h2>
 
-          <div className="flex flex-col items-start gap-5">
+          <div className="flex flex-col items-start gap-5 2xl:gap-6">
             {charity_reasons.map((r, i) => {
               return (
-                <div className="flex gap-4" key={i}>
+                <div className="flex gap-4 lg:gap-6" key={i}>
                   <div className=" flex items-center">
-                    <div className="w-12 h-12 bg-primary rounded-full p-2.5 col-span-1 flex items-center icon-container">
+                    <div className="w-14 h-14 bg-primary rounded-full p-2.5 col-span-1 flex items-center icon-container">
                       {r.image}
                     </div>
                   </div>
                   <div className="">
-                    <h3 className="font-bold text-lg">{r.title}</h3>
+                    <h3 className="font-bold text-lg lg:text-xl 2xl:text-2xl">
+                      {r.title}
+                    </h3>
                     <span
-                      className={`text-[13px] font-normal ${
+                      className={`text-[14px] lg:text-base font-normal ${
                         theme ? "text-gray-400" : "text-[#2d2d2d]"
                       }`}
                     >
