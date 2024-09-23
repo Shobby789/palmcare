@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ThemeToggler from "./ThemeToggler";
 
 const Navbar = () => {
   return (
@@ -45,6 +46,7 @@ const Navbar = () => {
         >
           Events
         </Link>
+        <ThemeToggler />
       </div>
     </nav>
   );

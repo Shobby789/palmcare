@@ -6,7 +6,7 @@ const EventCard = () => {
   return (
     <div className="w-full h-full relative group overflow-hidden">
       <div
-        className="w-full h-full inset-0 absolute z-0"
+        className="w-full h-full inset-0 absolute z-0 group-hover:scale-110 transition-all duration-700"
         style={{
           backgroundImage:
             "linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1509163245925-f4255dea7727?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",

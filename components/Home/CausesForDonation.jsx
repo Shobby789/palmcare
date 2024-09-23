@@ -1,11 +1,18 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import DonationCauseCard from "../Global/DonationCauseCard";
+import ThemeContext from "@/context/ThemeContext";
 // import CausesSwiper from "./CausesSwiper";
 
 const CausesForDonation = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full vertical-padding horizontal-padding">
+    <section
+      className={`w-full vertical-padding horizontal-padding ${
+        theme && "bg-dark text-white"
+      }`}
+    >
       <div className="w-full flex flex-col items-center gap-3">
         <div className="flex items-center gap-2">
           <FaHandHoldingHeart className="text-lg accent" />

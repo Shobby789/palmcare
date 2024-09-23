@@ -1,14 +1,21 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import EventCard from "../Global/EventCard";
 import { EVENTS_PROGRAMS } from "@/constants/Events";
 import { SlCalender } from "react-icons/sl";
 import { LuClock } from "react-icons/lu";
 import Link from "next/link";
+import ThemeContext from "@/context/ThemeContext";
 
 const EventsAndPrograms = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full vertical-padding horizontal-padding">
+    <section
+      className={`w-full vertical-padding horizontal-padding ${
+        theme ? "bg-dark text-white" : "text-black bg-white"
+      }`}
+    >
       <div className="w-full flex flex-col items-center gap-3">
         <div className="flex items-center gap-2">
           <FaHandHoldingHeart className="text-lg accent" />
@@ -38,7 +45,7 @@ const EventsAndPrograms = () => {
                   <img
                     src={news.image}
                     alt=""
-                    className="w-full object-cover h-[120px] hover:scale-110 transition-all duration-500 brightness-90"
+                    className="w-full object-cover h-[120px] hover:scale-110 transition-all duration-700 brightness-90"
                   />
                 </div>
                 <div className="flex flex-col items-start justify-center gap-2 pt-2.5">
@@ -59,7 +66,9 @@ const EventsAndPrograms = () => {
                   <h2 className="font-bold text-base">{news.title}</h2>
                   <Link
                     href={"/"}
-                    className="text-[13px] font-medium underline text-gray-600"
+                    className={`text-[13px] font-medium underline ${
+                      theme ? "text-gray-400" : "text-gray-600"
+                    }`}
                   >
                     Event Details
                   </Link>

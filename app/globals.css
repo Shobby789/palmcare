@@ -49,6 +49,14 @@ h3 {
   @apply bg-[#2ECC71];
 }
 
+.primary-text {
+  @apply text-[#2ECC71];
+}
+
+.primary-border {
+  @apply border-[#2ECC71];
+}
+
 .btn {
   @apply text-[14px] px-8 py-2 text-white font-medium bg-[#2ECC71];
 }
@@ -97,4 +105,25 @@ h3 {
   background-position: center;
   background-size: cover;
   height: 100%;
+}
+
+.news-and-articles-dark {
+  background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.95),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1564051741945-452df4e721bc?q=80&w=2061&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+
+.bg-dark {
+  @apply bg-black;
+}
+
+.bg-light-dark {
+  @apply bg-[#1c1c1c];
 }

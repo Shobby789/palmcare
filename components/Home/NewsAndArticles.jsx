@@ -1,10 +1,19 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa";
 import NewsCard from "../Global/NewsCard";
+import ThemeContext from "@/context/ThemeContext";
 
 const NewsAndArticles = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full pt-12 pb-24 horizontal-padding relative news-and-articles">
+    <section
+      className={`w-full pt-12 pb-24 horizontal-padding relative ${
+        theme
+          ? "bg-dark text-white news-and-articles-dark"
+          : "bg-white text-black news-and-articles"
+      }`}
+    >
       <div className="w-full flex flex-col items-center gap-3">
         <div className="flex items-center gap-2">
           <FaHandHoldingHeart className="text-lg accent" />

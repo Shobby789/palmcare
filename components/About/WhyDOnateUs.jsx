@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { TbReplace } from "react-icons/tb";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { MdOutlineHouseboat } from "react-icons/md";
+import ThemeContext from "@/context/ThemeContext";
 
 const charity_reasons = [
   {
@@ -24,8 +26,9 @@ const charity_reasons = [
 ];
 
 const WhyDonateUs = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full pt-12">
+    <section className={`w-full pt-12 ${theme && "bg-dark text-white"}`}>
       <div className="w-full flex items-center">
         <div
           className="flex items-center justify-center gap-10 lg:h-[110vh] 2xl:h-[75vh] w-full lg:w-[30%] 2xl:w-[40%]"
@@ -49,7 +52,11 @@ const WhyDonateUs = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start justify-center gap-6 px-4 lg:pr-6 xl:pr-10 2xl:pr-40 w-full lg:w-[70%] 2xl:w-[60%] bg-[#212327] text-white lg:h-[110vh] 2xl:h-[75vh] py-6 lg:pl-6 2xl:pl-10">
+        <div
+          className={`flex flex-col items-start justify-center gap-6 px-4 lg:pr-6 xl:pr-10 2xl:pr-40 w-full lg:w-[70%] 2xl:w-[60%] ${
+            theme ? "bg-[#1c1c1c] text-white" : "bg-[#212327] text-white"
+          } lg:h-[110vh] 2xl:h-[75vh] py-6 lg:pl-6 2xl:pl-10`}
+        >
           <div className="flex items-center gap-2">
             <FaHandHoldingHeart className="text-lg accent" />
             <span className="text-[18px] font-bold accent quicksand-fonts">

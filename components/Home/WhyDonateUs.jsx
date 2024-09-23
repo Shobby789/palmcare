@@ -1,9 +1,11 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { TbReplace } from "react-icons/tb";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { MdOutlineHouseboat } from "react-icons/md";
+import ThemeContext from "@/context/ThemeContext";
 
 const charity_reasons = [
   {
@@ -24,8 +26,9 @@ const charity_reasons = [
 ];
 
 const WhyDonateUs = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full pt-12">
+    <section className={`w-full pt-12 ${theme && "bg-dark text-white"}`}>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div
           className="flex items-center justify-center gap-10 lg:h-[90vh] 2xl:h-[75vh]"
@@ -71,7 +74,11 @@ const WhyDonateUs = () => {
                   </div>
                   <div className="">
                     <h3 className="font-bold text-lg">{r.title}</h3>
-                    <span className="text-[13px] font-normal text-[#2d2d2d]">
+                    <span
+                      className={`text-[13px] font-normal ${
+                        theme ? "text-gray-400" : "text-[#2d2d2d]"
+                      }`}
+                    >
                       {r.text}
                     </span>
                   </div>

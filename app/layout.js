@@ -1,7 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/Global/Navbar";
 import Footer from "@/components/Global/Footer";
+import ScrollToTopButton from "@/components/Global/ScrollToTopButton";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,9 +26,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <Navbar /> */}
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <ScrollToTopButton />
+
+          {/* <Navbar /> */}
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

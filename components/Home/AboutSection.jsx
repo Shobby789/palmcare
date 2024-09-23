@@ -1,5 +1,7 @@
+"use client";
+import ThemeContext from "@/context/ThemeContext";
 import Image from "next/image";
-import React from "react";
+import React, { useContext } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 
@@ -16,8 +18,13 @@ const charity_reasons2 = [
 ];
 
 const AboutSection = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="w-full vertical-padding horizontal-padding">
+    <section
+      className={`w-full vertical-padding horizontal-padding ${
+        theme && "bg-[#000] text-white"
+      }`}
+    >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="flex items-center gap-5">
           <Image
@@ -44,7 +51,11 @@ const AboutSection = () => {
           <h2 className="text-2xl md:text-2xl lg:text-4xl 2xl:text-5xl font-bold tracking-tight lg:leading-[38px] 2xl:leading-[48px]">
             Helping is Great Virtue for Every Human’s
           </h2>
-          <p className="text-[13px] leading-5 text-[#2d2d2d]">
+          <p
+            className={`text-[13px] leading-5 ${
+              theme ? "text-[#fff]" : "text-[#2d2d2d]"
+            }`}
+          >
             It has been determined through research that when we feel to help,
             and that someone authentically needs our assistance, and that no
             trick is being played on us, we reliably do intervene.

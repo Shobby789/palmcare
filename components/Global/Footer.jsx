@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useContext } from "react";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -6,10 +7,16 @@ import {
 } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
+import ThemeContext from "@/context/ThemeContext";
 
 const Footer = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <footer className="w-full text-black py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding">
+    <footer
+      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding ${
+        theme ? "bg-dark text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="col-span-1 lg:col-span-2 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8">
         <Link href="/" className="flex items-center gap-2">
           {/* <img

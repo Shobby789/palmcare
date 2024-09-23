@@ -1,8 +1,14 @@
-import React from "react";
+import ThemeContext from "@/context/ThemeContext";
+import React, { useContext } from "react";
 
 const DonationCauseCard = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="w-full flex flex-col shadow-lg">
+    <div
+      className={`w-full flex flex-col shadow-lg ${
+        theme ? "bg-light-dark text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="w-full">
         <img
           src="https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
@@ -12,7 +18,11 @@ const DonationCauseCard = () => {
       </div>
       <div className="w-full relative px-5 pt-20 lg:pt-14 pb-5">
         <div className="w-full absolute bg-transparent -top-8 left-0">
-          <div className="mx-auto rounded-md shadow-md pt-5 pb-4 px-6 bg-white w-[90%]">
+          <div
+            className={`mx-auto rounded-md shadow-md pt-5 pb-4 px-6 w-[90%] ${
+              theme ? "bg-[#2d2d2d]" : "bg-white"
+            }`}
+          >
             <div class="w-full bg-gray-200 rounded-full h-1.5 mb-2.5">
               <div class="bg-yellow-400 h-1.5 rounded-full w-[80%]"></div>
             </div>

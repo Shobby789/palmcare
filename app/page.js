@@ -7,6 +7,11 @@ import NewsAndArticles from "@/components/Home/NewsAndArticles";
 import StatisticsSection from "@/components/Home/StatisticsSection";
 import WhyDonateUs from "@/components/Home/WhyDonateUs";
 
+export const metadata = {
+  title: "Palmcare - Home",
+  description: "Palmcare Charity",
+};
+
 export default function Home() {
   return (
     <>
