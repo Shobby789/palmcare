@@ -8,7 +8,7 @@ const EventGrid = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={`w-full vertical-padding horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ${
+      className={`w-full vertical-padding horizontal-padding flex flex-col gap-y-12 gap-x-6 ${
         theme && "bg-dark text-white"
       }`}
     >
