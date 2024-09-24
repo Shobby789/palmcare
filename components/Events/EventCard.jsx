@@ -7,7 +7,6 @@ import ThemeContext from "@/context/ThemeContext";
 
 const EventCard = () => {
   const { theme } = useContext(ThemeContext);
-  console.log("theme from events >> ", theme);
   return (
     <Link href={"/events"}>
       <div
