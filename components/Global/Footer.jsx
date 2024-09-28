@@ -1,5 +1,5 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import {
   TiSocialFacebook,
   TiSocialLinkedin,
@@ -8,16 +8,28 @@ import {
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import ThemeContext from "@/context/ThemeContext";
+import { useInView } from "framer";
 
 const Footer = () => {
   const { theme } = useContext(ThemeContext);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <footer
-      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding ${
-        theme ? "bg-dark text-white" : "bg-white text-black"
+      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding overflow-hidden ${
+        theme ? "bg-dark text-white" : "bg-green-50 text-black"
       }`}
+      ref={ref}
     >
-      <div className="col-span-1 lg:col-span-2 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8">
+      <div
+        className="col-span-1 lg:col-span-2 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <Link href="/" className="flex items-center gap-2">
           {/* <img
             src="/file.png"
@@ -49,7 +61,15 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-6 2xl:gap-8">
+
+      <div
+        className="flex flex-col gap-6 2xl:gap-8"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <h3 className="text-xl 2xl:text-2xl font-bold">Company</h3>
         <div className="flex flex-col items-start gap-3">
           <Link href="/" className="font-medium text-[16px] ">
@@ -69,7 +89,15 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-6 2xl:gap-8">
+
+      <div
+        className="flex flex-col gap-6 2xl:gap-8"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <h3 className="text-xl 2xl:text-2xl font-bold">Explore</h3>
         <div className="flex flex-col items-start gap-3">
           <Link href="/" className="font-medium text-[16px] ">
@@ -86,7 +114,15 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-6 2xl:gap-8">
+
+      <div
+        className="flex flex-col gap-6 2xl:gap-8"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
         <h3 className="text-xl 2xl:text-2xl font-bold">Quick Links</h3>
 
         <ul className="flex flex-col items-start gap-3">

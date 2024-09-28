@@ -1,9 +1,11 @@
 "use client";
 import ThemeContext from "@/context/ThemeContext";
 import Image from "next/image";
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { FaCheck } from "react-icons/fa6";
 import { FaHandHoldingHeart } from "react-icons/fa6";
+import Button from "../Global/Button";
+import { useInView } from "framer-motion";
 
 const charity_reasons = [
   "Charity For Education",
@@ -19,6 +21,9 @@ const charity_reasons2 = [
 
 const AboutSection = () => {
   const { theme } = useContext(ThemeContext);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section
       className={`w-full vertical-padding horizontal-padding ${
@@ -41,20 +46,42 @@ const AboutSection = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start gap-4">
-          <div className="flex items-center gap-2">
-            <FaHandHoldingHeart className="text-lg accent" />
-            <span className="text-[18px] font-bold accent quicksand-fonts">
+        <div
+          className="flex flex-col items-start gap-6 overflow-hidden"
+          ref={ref}
+        >
+          <div
+            className="flex items-center gap-2"
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            <FaHandHoldingHeart className="text-lg primary-text" />
+            <span className="text-[18px] font-bold primary-text quicksand-fonts">
               About logo
             </span>
           </div>
-          <h2 className="section-heading">
+          <h2
+            className="section-heading"
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
             Helping is Great Virtue for Every Human’s
           </h2>
           <p
             className={`text-[16px] leading-6 ${
               theme ? "text-[#fff]" : "text-[#2d2d2d]"
             }`}
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
           >
             It has been determined through research that when we feel to help,
             and that someone authentically needs our assistance, and that no
@@ -67,7 +94,16 @@ const AboutSection = () => {
             <div className="flex flex-col items-start gap-2">
               {charity_reasons.map((r, i) => {
                 return (
-                  <div className="flex items-center gap-2" key={i}>
+                  <div
+                    className="flex items-center gap-2"
+                    key={i}
+                    style={{
+                      transform: isInView ? "none" : "translateY(100px)",
+                      opacity: isInView ? 1 : 0,
+                      transition:
+                        "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+                    }}
+                  >
                     <div className="w-5 h-5 bg-primary rounded-full p-1">
                       <FaCheck className="w-full h-full text-white" />
                     </div>
@@ -81,7 +117,16 @@ const AboutSection = () => {
             <div className="flex flex-col items-start gap-2">
               {charity_reasons2.map((r, i) => {
                 return (
-                  <div className="flex items-center gap-2" key={i}>
+                  <div
+                    className="flex items-center gap-2"
+                    key={i}
+                    style={{
+                      transform: isInView ? "none" : "translateY(100px)",
+                      opacity: isInView ? 1 : 0,
+                      transition:
+                        "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+                    }}
+                  >
                     <div className="w-5 h-5 bg-primary rounded-full p-1">
                       <FaCheck className="w-full h-full text-white" />
                     </div>
@@ -93,7 +138,15 @@ const AboutSection = () => {
               })}
             </div>
           </div>
-          <button className="btn mt-4">Donate</button>
+          <div
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.7s",
+            }}
+          >
+            <Button />
+          </div>
         </div>
       </div>
     </section>

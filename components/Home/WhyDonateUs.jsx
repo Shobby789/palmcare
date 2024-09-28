@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { FaHandHoldingHeart } from "react-icons/fa6";
 import { TbReplace } from "react-icons/tb";
 import { GiTakeMyMoney } from "react-icons/gi";
 import { MdOutlineHouseboat } from "react-icons/md";
 import ThemeContext from "@/context/ThemeContext";
+import { useInView } from "framer-motion";
 
 const charity_reasons = [
   {
@@ -27,6 +28,9 @@ const charity_reasons = [
 
 const WhyDonateUs = () => {
   const { theme } = useContext(ThemeContext);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   return (
     <section className={`w-full pt-12 ${theme && "bg-dark text-white"}`}>
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -40,7 +44,7 @@ const WhyDonateUs = () => {
           }}
         >
           <div className="h-[80%] w-[12%] border border-[#F1C40F]">
-            {/* <h2 className="accent font-semibold text-3xl quicksand-fonts rotate-90">
+            {/* <h2 className="primary-text font-semibold text-3xl quicksand-fonts rotate-90">
               Best Charity foundation
             </h2> */}
           </div>
@@ -52,21 +56,47 @@ const WhyDonateUs = () => {
           />
         </div>
 
-        <div className="flex flex-col items-start justify-center gap-4 lg:gap-6 2xl:gap-9 px-4 lg:pr-6 xl:pr-10 2xl:pr-40">
-          <div className="flex items-center gap-2">
-            <FaHandHoldingHeart className="text-lg accent" />
-            <span className="text-[18px] font-bold accent quicksand-fonts">
+        <div
+          className="flex flex-col items-start justify-center gap-4 lg:gap-6 2xl:gap-9 px-4 lg:pr-6 xl:pr-10 2xl:pr-40 overflow-hidden"
+          ref={ref}
+        >
+          <div
+            className="flex items-center gap-2"
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            <FaHandHoldingHeart className="text-lg primary-text" />
+            <span className="text-[18px] font-bold primary-text quicksand-fonts">
               Why donate us
             </span>
           </div>
-          <h2 className="section-heading">
+          <h2
+            className="section-heading"
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
+            }}
+          >
             We're So Much Trusted Charity Foundations
           </h2>
 
-          <div className="flex flex-col items-start gap-5 2xl:gap-6">
+          <div className="flex flex-col items-start gap-5 2xl:gap-6 overflow-hidden">
             {charity_reasons.map((r, i) => {
               return (
-                <div className="flex gap-4 lg:gap-6" key={i}>
+                <div
+                  className="flex gap-4 lg:gap-6"
+                  key={i}
+                  style={{
+                    transform: isInView ? "none" : "translateY(100px)",
+                    opacity: isInView ? 1 : 0,
+                    transition:
+                      "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s",
+                  }}
+                >
                   <div className=" flex items-center">
                     <div className="w-14 h-14 bg-primary rounded-full p-2.5 col-span-1 flex items-center icon-container">
                       {r.image}

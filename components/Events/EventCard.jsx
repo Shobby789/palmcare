@@ -10,7 +10,7 @@ const EventCard = () => {
   return (
     <Link href={"/events"}>
       <div
-        className={`w-full h-auto lg:h-[55vh] 2xl:h-[45vh] relative group overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-10 rounded-xl ${
+        className={`w-full h-auto lg:min-h-[55vh] 2xl:h-[45vh] relative group overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-10 rounded-xl ${
           theme ? "bg-black text-white" : "bg-green-50 text-black"
         }`}
       >

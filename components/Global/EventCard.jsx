@@ -17,12 +17,14 @@ const EventCard = () => {
       <div className="w-full h-full absolute inset-0 z-10 text-white px-4 py-6 flex flex-col items-start justify-end gap-4">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <SlCalender className="text-base accent" />
-            <span className="text-sm font-medium accent">May 6, 2025</span>
+            <SlCalender className="text-base primary-text" />
+            <span className="text-sm font-medium primary-text">
+              May 6, 2025
+            </span>
           </div>
           <div className="flex items-center gap-2">
-            <LuClock className="text-base accent" />
-            <span className="text-sm font-medium accent">08:00 AM</span>
+            <LuClock className="text-base primary-text" />
+            <span className="text-sm font-medium primary-text">08:00 AM</span>
           </div>
         </div>
         <h2 className="font-bold text-lg lg:text-2xl">

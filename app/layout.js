@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Global/Footer";
 import ScrollToTopButton from "@/components/Global/ScrollToTopButton";
 import { ThemeProvider } from "@/context/ThemeContext";
+import DonateButton from "@/components/Global/DonateButton";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <ScrollToTopButton />
+          <DonateButton />
 
           {/* <Navbar /> */}
           {children}
