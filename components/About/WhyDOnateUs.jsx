@@ -39,7 +39,7 @@ const WhyDonateUs = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="h-[80%] w-[12%] border border-[#F1C40F]">
+          <div className="h-[80%] w-[12%] border primary-border">
             {/* <h2 className="accent font-semibold text-3xl quicksand-fonts rotate-90">
               Best Charity foundation
             </h2> */}
@@ -58,8 +58,8 @@ const WhyDonateUs = () => {
           } lg:h-[110vh] 2xl:h-[75vh] py-6 lg:pl-6 2xl:pl-10`}
         >
           <div className="flex items-center gap-2">
-            <FaHandHoldingHeart className="text-lg accent" />
-            <span className="text-[18px] font-bold accent quicksand-fonts">
+            <FaHandHoldingHeart className="text-lg primary-text" />
+            <span className="text-[18px] font-bold primary-text quicksand-fonts">
               Why donate us
             </span>
           </div>
@@ -71,11 +71,11 @@ const WhyDonateUs = () => {
             {charity_reasons.map((r, i) => {
               return (
                 <div
-                  className="flex flex-col items-start text-start gap-4 border lg:border-[#F1C40F] py-6 px-4"
+                  className="flex flex-col items-start text-start gap-4 border lg:border-[#2ECC71] py-6 px-4"
                   key={i}
                 >
                   <div className="flex items-center">
-                    <div className="w-12 h-12 2xl:w-14 2xl:h-14 bg-[#F1C40F] rounded-full p-2.5 col-span-1 flex items-center icon-container">
+                    <div className="w-12 h-12 2xl:w-14 2xl:h-14 bg-[#2ECC71] rounded-full p-2.5 col-span-1 flex items-center icon-container">
                       {r.image}
                     </div>
                   </div>

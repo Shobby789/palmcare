@@ -6,6 +6,7 @@ import { LiaUsersSolid } from "react-icons/lia";
 import { PiFilesDuotone } from "react-icons/pi";
 import ThemeContext from "@/context/ThemeContext";
 import { useInView } from "framer-motion";
+import StatisticsCard from "../Global/StatisticsCard";
 
 const StatisticsSection = () => {
   const { theme } = useContext(ThemeContext);
@@ -103,6 +104,12 @@ const StatisticsSection = () => {
           <PiFilesDuotone className="w-10 md:w-12 h-10 md:h-12 text-[#2ECC71] transition-all duration-300" />
         </div>
       </div>
+      {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-5">
+        <StatisticsCard />
+        <StatisticsCard />
+        <StatisticsCard />
+        <StatisticsCard />
+      </div> */}
     </section>
   );
 };

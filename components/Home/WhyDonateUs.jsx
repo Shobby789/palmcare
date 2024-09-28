@@ -43,7 +43,7 @@ const WhyDonateUs = () => {
             backgroundPosition: "center",
           }}
         >
-          <div className="h-[80%] w-[12%] border border-[#F1C40F]">
+          <div className="h-[80%] w-[12%] border primary-border">
             {/* <h2 className="primary-text font-semibold text-3xl quicksand-fonts rotate-90">
               Best Charity foundation
             </h2> */}
