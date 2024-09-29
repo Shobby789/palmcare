@@ -26,7 +26,7 @@ const Hero = () => {
       </video>
 
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black to-black/20 z-10"></div>
 
       {/* Content */}
       <div

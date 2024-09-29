@@ -57,11 +57,11 @@ const EventsAndPrograms = () => {
         >
           <EventCard />
         </div>
-        <div className="flex flex-col items-start gap-5 overflow-hidden">
+        <div className="flex flex-col items-start gap-5 overflow-hidden border border-white">
           {EVENTS_PROGRAMS.map((news, index) => {
             return (
               <div
-                className="w-full flex items-start gap-4"
+                className="w-full flex flex-col md:flex-row items-start gap-4 border"
                 key={index}
                 style={{
                   transform: isInView ? "none" : "translateY(100px)",
@@ -70,7 +70,7 @@ const EventsAndPrograms = () => {
                     "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.59s",
                 }}
               >
-                <div className="w-[40%] h-[150px] overflow-hidden relative">
+                <div className="w-full md:w-[40%] h-[150px] overflow-hidden relative">
                   <div className="bg-primary absolute top-0 px-2 pb-1 right-0 z-10 rounded-bl-xl">
                     <span className="text-[13px] text-white font-medium">
                       {news.tag}

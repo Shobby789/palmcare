@@ -14,7 +14,7 @@ const ThemeToggler = () => {
   return (
     <button
       onClick={toggleTheme}
-      className={`w-9 h-9 2xl:w-9 2xl:h-9 rounded-full z-50 ${
+      className={`w-7 h-7 lg:w-9 lg:h-9 2xl:w-9 2xl:h-9 rounded-full z-50 ${
         theme ? "bg-[#ffff] p-2 2xl:p-2" : "bg-[#1c1c1c] p-1.5 2xl:p-2"
       } flex items-center justify-center transition-all duration-500 outline-none`}
     >
