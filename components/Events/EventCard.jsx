@@ -1,18 +1,26 @@
 "use client";
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 import { SlCalender } from "react-icons/sl";
 import { LuClock } from "react-icons/lu";
 import Link from "next/link";
 import ThemeContext from "@/context/ThemeContext";
+import { useInView } from "framer";
 
 const EventCard = () => {
   const { theme } = useContext(ThemeContext);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <Link href={"/events"}>
+    <Link href={"/events"} ref={ref}>
       <div
         className={`w-full h-auto lg:min-h-[55vh] 2xl:h-[45vh] relative group overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-10 rounded-xl ${
           theme ? "bg-black text-white" : "bg-green-50 text-black"
         }`}
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
       >
         <div className="col-span-2 flex items-start gap-6 flex-col lg:flex-row">
           <div className="lg:h-full w-full lg:w-[10%] border-r-2 primary-border flex flex-col items-center gap-0 lg:pr-5">

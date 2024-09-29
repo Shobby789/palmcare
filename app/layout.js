@@ -30,8 +30,6 @@ export default function RootLayout({ children }) {
         <ThemeProvider>
           <ScrollToTopButton />
           <DonateButton />
-
-          {/* <Navbar /> */}
           {children}
           <Footer />
         </ThemeProvider>
