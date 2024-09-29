@@ -8,10 +8,6 @@ const Hero = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
-  const handleNavigateToDonate = () => {
-    window.location.href = "https://givebutter.com/vHIBtO";
-  };
-
   return (
     <main className="h-[110vh] w-full relative">
       {/* Navbar */}
@@ -72,7 +68,7 @@ const Hero = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <Button onclick={handleNavigateToDonate} />
+          <Button />
         </div>
       </div>
     </main>
