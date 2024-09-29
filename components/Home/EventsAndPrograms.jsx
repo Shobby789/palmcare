@@ -57,11 +57,11 @@ const EventsAndPrograms = () => {
         >
           <EventCard />
         </div>
-        <div className="flex flex-col items-start gap-5 overflow-hidden border border-white">
+        <div className="flex flex-col items-start gap-5 overflow-hidden">
           {EVENTS_PROGRAMS.map((news, index) => {
             return (
               <div
-                className="w-full flex flex-col md:flex-row items-start gap-4 border"
+                className="w-full flex flex-col md:flex-row items-start gap-4"
                 key={index}
                 style={{
                   transform: isInView ? "none" : "translateY(100px)",
