@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer
       className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding overflow-hidden ${
-        theme ? "bg-dark text-white" : "bg-green-50 text-black"
+        theme ? "bg-dark text-white" : "bg-yellow-50 text-black"
       }`}
       ref={ref}
     >

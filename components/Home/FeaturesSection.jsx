@@ -12,7 +12,7 @@ const FeaturesSection = () => {
 
   return (
     <section
-      className="w-full py-16 bg-[#2ECC71] horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white gap-6 overflow-hidden"
+      className="w-full py-16 bg-[#F2C75C] horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white gap-6 overflow-hidden"
       ref={ref}
     >
       <div

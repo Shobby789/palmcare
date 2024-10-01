@@ -46,19 +46,22 @@ h3 {
 }
 
 .bg-primary {
-  @apply bg-[#2ECC71];
+  /* @apply bg-[#2ECC71]; */
+  @apply bg-[#F2C75C];
 }
 
 .primary-text {
-  @apply text-[#2ECC71];
+  /* @apply text-[#2ECC71]; */
+  @apply text-[#F2C75C];
 }
 
 .primary-border {
-  @apply border-[#2ECC71];
+  /* @apply border-[#2ECC71]; */
+  @apply border-[#F2C75C];
 }
 
 .btn {
-  @apply text-[16px] 2xl:text-lg px-10 py-3 text-white font-medium bg-[#2ECC71];
+  @apply text-[16px] 2xl:text-lg px-10 py-3 text-white font-medium bg-primary;
 }
 
 .section-heading {
@@ -66,7 +69,7 @@ h3 {
 }
 
 .accent {
-  @apply text-[#F1C40F];
+  @apply text-[#F2C75C];
 }
 
 .swiper {

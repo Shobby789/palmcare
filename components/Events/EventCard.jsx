@@ -14,7 +14,7 @@ const EventCard = () => {
     <Link href={"/events"} ref={ref}>
       <div
         className={`w-full h-auto lg:min-h-[55vh] 2xl:h-[45vh] relative group overflow-hidden grid grid-cols-1 lg:grid-cols-3 gap-6 lg:p-10 rounded-xl ${
-          theme ? "bg-black text-white" : "bg-green-50 text-black"
+          theme ? "bg-black text-white" : "bg-yellow-50 text-black"
         }`}
         style={{
           transform: isInView ? "none" : "translateY(100px)",
