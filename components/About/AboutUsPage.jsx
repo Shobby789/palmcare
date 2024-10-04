@@ -62,7 +62,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
         paddingRight: IMG_PADDING,
       }}
     >
-      <div className="relative h-[150vh]">
+      <div className="relative min-h-[100vh]">
         <StickyImage imgUrl={imgUrl} />
         <OverlayCopy heading={heading} subheading={subheading} />
       </div>
@@ -143,7 +143,7 @@ const ExampleContent = ({ heading, paragraph1, paragraph2 }) => {
         theme ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
-      <div className="text-center pt-12 pb-20">
+      <div className="text-center py-12">
         <p className="mb-4 text-[16px] leading-6">{paragraph1}</p>
         <p className="mb-8 text-[16px] leading-6">{paragraph2}</p>
         <Button onclick={handleNavigateToDonate} />

@@ -34,12 +34,12 @@ const Navbar = () => {
         >
           Home
         </Link>
-        <Link
+        {/* <Link
           href="/about"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           About
-        </Link>
+        </Link> */}
         <Link
           href="/team"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
@@ -107,12 +107,12 @@ const Navbar = () => {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/team"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}

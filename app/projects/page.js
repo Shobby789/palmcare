@@ -8,7 +8,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <AboutUsHero heading={"Projects"} />
       {/* <div className="w-full vertical-padding horizontal-padding flex justify-center">
         <h2 className="font-bold text-2xl">Upcoming</h2>

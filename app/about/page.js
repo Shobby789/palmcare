@@ -15,7 +15,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Navbar2 />
       {/* <AboutUsHero heading={"About Us"} />
       <AboutSection />

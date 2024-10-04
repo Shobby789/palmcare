@@ -9,7 +9,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <AboutUsHero heading={"Our Team"} />
       <TeamGrid />
     </div>

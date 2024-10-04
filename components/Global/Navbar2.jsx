@@ -17,7 +17,7 @@ const Navbar2 = () => {
     <nav
       className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-50 ${
         theme ? "bg-black text-white" : "bg-white text-black"
-      } relative`}
+      } relative `}
     >
       <Link href="/" className="flex items-center gap-x-2 z-50">
         {/* <img
@@ -36,12 +36,12 @@ const Navbar2 = () => {
         >
           Home
         </Link>
-        <Link
+        {/* <Link
           href="/about"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           About
-        </Link>
+        </Link> */}
         <Link
           href="/team"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
@@ -109,12 +109,12 @@ const Navbar2 = () => {
             >
               Home
             </Link>
-            <Link
+            {/* <Link
               href="/about"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               About
-            </Link>
+            </Link> */}
             <Link
               href="/team"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}

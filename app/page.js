@@ -1,3 +1,4 @@
+import { AboutUsPage } from "@/components/About/AboutUsPage";
 import AboutSection from "@/components/Home/AboutSection";
 import CausesForDonation from "@/components/Home/CausesForDonation";
 import EventsAndPrograms from "@/components/Home/EventsAndPrograms";
@@ -14,7 +15,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Hero />
       <AboutSection />
       <StatisticsSection />
@@ -23,6 +24,7 @@ export default function Home() {
       <FeaturesSection />
       <EventsAndPrograms />
       <NewsAndArticles />
-    </>
+      <AboutUsPage />
+    </div>
   );
 }

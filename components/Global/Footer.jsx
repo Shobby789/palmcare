@@ -75,16 +75,16 @@ const Footer = () => {
           <Link href="/" className="font-medium text-[16px] ">
             Home
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
+          {/* <Link href="/" className="font-medium text-[16px] ">
             About Us
-          </Link>
-          <Link href="/" className="font-medium text-[16px] ">
+          </Link> */}
+          <Link href="/team" className="font-medium text-[16px] ">
             Team
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
+          <Link href="/projects" className="font-medium text-[16px] ">
             Projects
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
+          <Link href="/events" className="font-medium text-[16px] ">
             Events
           </Link>
         </div>

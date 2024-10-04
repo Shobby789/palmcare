@@ -8,7 +8,7 @@ const TeamGrid = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={`w-full vertical-padding horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ${
+      className={`w-full vertical-padding horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-20 ${
         theme && "bg-dark text-white"
       }`}
     >
