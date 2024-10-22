@@ -19,11 +19,11 @@ export default function Home() {
       <Hero />
       <AboutSection />
       <StatisticsSection />
-      <CausesForDonation />
+      {/* <CausesForDonation /> */}
       <WhyDonateUs />
       <FeaturesSection />
-      <EventsAndPrograms />
-      <NewsAndArticles />
+      {/* <EventsAndPrograms /> */}
+      {/* <NewsAndArticles /> */}
       <AboutUsPage />
     </div>
   );

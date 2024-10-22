@@ -43,8 +43,8 @@ const TeamMemberCard = ({ member, index }) => {
     // </div>
     <div
       className={`relative flex flex-col items-start ${
-        index % 2 === 0 ? "" : "lg:mt-12"
-      } ${theme ? "bg-dark text-white" : "bg-white text-black"}`}
+        theme ? "bg-dark text-white" : "bg-white text-black"
+      }`}
     >
       <div
         className={`h-[300px] ${

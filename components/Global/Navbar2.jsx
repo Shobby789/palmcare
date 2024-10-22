@@ -20,14 +20,14 @@ const Navbar2 = () => {
       } relative `}
     >
       <Link href="/" className="flex items-center gap-x-2 z-50">
-        {/* <img
-          src="/file.png"
+        <img
+          src="/assets/logo-2.png"
           alt=""
           className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
-        /> */}
-        <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
+        />
+        {/* <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
           logo
-        </span>
+        </span> */}
       </Link>
       <div className="hidden lg:flex items-center gap-x-10">
         <Link
@@ -59,6 +59,12 @@ const Navbar2 = () => {
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           Events
+        </Link>
+        <Link
+          href="/contact-us"
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+        >
+          Contact
         </Link>
         <ThemeToggler />
       </div>
@@ -121,17 +127,23 @@ const Navbar2 = () => {
             >
               Team
             </Link>
-            <Link
+            {/* <Link
               href="/projects"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               Projects
-            </Link>
+            </Link> */}
             <Link
               href="/events"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               Events
+            </Link>
+            <Link
+              href="/contact-us"
+              className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+            >
+              Contact
             </Link>
           </div>
         </div>

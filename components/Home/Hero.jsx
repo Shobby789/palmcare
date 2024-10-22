@@ -22,7 +22,6 @@ const Hero = () => {
       >
         <source src="/assets/home-hero.mp4" type="video/mp4" />
         {/* Fallback text for browsers that don't support video */}
-        Your browser does not support the video tag.
       </video>
 
       {/* Dark Gradient Overlay */}
@@ -42,7 +41,7 @@ const Hero = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          Raise Your <br /> Helping Hand
+          Illuminating Lives with <br /> Solar Energy
         </h1>
 
         {/* Subtitle */}
@@ -54,14 +53,14 @@ const Hero = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-          temporibus quos, facilis laudantium excepturi cumque quasi numquam
-          iusto quia aliquam.
+          At Project Noor Foundation, we are dedicated to eradicating energy
+          poverty in rural Pakistan by providing clean, safe, and sustainable
+          solar power to families living without electricity.
         </h2>
 
         {/* Button */}
         <div
-          className="relative"
+          className="relative flex items-center gap-3 lg:gap-x-4"
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
@@ -69,6 +68,12 @@ const Hero = () => {
           }}
         >
           <Button />
+          <a
+            href="#about-us"
+            className="relative overflow-hidden bg-primary text-white font-medium py-2 px-4 rounded-full h-12 flex items-center"
+          >
+            Discover Our Impact
+          </a>
         </div>
       </div>
     </main>

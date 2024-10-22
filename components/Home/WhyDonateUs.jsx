@@ -7,22 +7,28 @@ import { GiTakeMyMoney } from "react-icons/gi";
 import { MdOutlineHouseboat } from "react-icons/md";
 import ThemeContext from "@/context/ThemeContext";
 import { useInView } from "framer-motion";
+import { FaHornbill } from "react-icons/fa";
 
 const charity_reasons = [
   {
     title: "Give Right Place",
-    text: "The opportunities around you to shape you, sharpen your gifts, and prepare you to do.",
+    text: "Approximately 27 million individuals in Pakistan lack access to electricity, primarily in rural areas.",
     image: <TbReplace />,
   },
   {
     title: "Save Money & Helath",
-    text: "Giving up unhealthy habits such as smoking, drinking sugary soft drinks, or drinking alcohol.",
+    text: "Many families depend on unsafe alternatives such as candles and kerosene lamps, leading to up to 20,000 fire-related deaths annually",
     image: <GiTakeMyMoney />,
   },
   {
     title: "Organisation & Programs",
-    text: "A collection of organizational resources that are geared to accomplish a goals.",
+    text: "Reliance on traditional fuels contributes to indoor air pollution, resulting in respiratory diseases affecting over 50,000 children each year.",
     image: <MdOutlineHouseboat />,
+  },
+  {
+    title: "Organisation & Programs",
+    text: "A significant number of households face exorbitant electricity bills that they cannot afford. This financial strain has led to tragic consequences, with reports of individuals taking their own lives due to the stress and despair caused by unmanageable energy costs.",
+    image: <FaHornbill />,
   },
 ];
 
@@ -50,7 +56,8 @@ const WhyDonateUs = () => {
           </div>
           <img
             src={
-              "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
+              // "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
+              "/assets/image-1.jpeg"
             }
             className="h-[80%] w-[50%] object-cover"
           />
@@ -70,7 +77,7 @@ const WhyDonateUs = () => {
           >
             <FaHandHoldingHeart className="text-lg primary-text" />
             <span className="text-[18px] font-bold primary-text quicksand-fonts">
-              Why donate us
+              The Challenge
             </span>
           </div>
           <h2
@@ -81,7 +88,7 @@ const WhyDonateUs = () => {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
             }}
           >
-            We're So Much Trusted Charity Foundations
+            Millions Still Live in Darkness
           </h2>
 
           <div className="flex flex-col items-start gap-5 2xl:gap-6 overflow-hidden">
@@ -103,16 +110,14 @@ const WhyDonateUs = () => {
                     </div>
                   </div>
                   <div className="">
-                    <h3 className="font-bold text-lg lg:text-xl 2xl:text-2xl">
-                      {r.title}
-                    </h3>
-                    <span
-                      className={`text-[14px] lg:text-base font-normal ${
+                    {/* <h3 className="font-bold text-lg 2xl:text-xl">{r.title}</h3> */}
+                    <p
+                      className={`text-[14px] font-normal ${
                         theme ? "text-gray-400" : "text-[#2d2d2d]"
                       }`}
                     >
                       {r.text}
-                    </span>
+                    </p>
                   </div>
                 </div>
               );

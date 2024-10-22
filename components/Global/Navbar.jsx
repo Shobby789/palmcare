@@ -18,14 +18,14 @@ const Navbar = () => {
       className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-50 bg-transparent text-white relative`}
     >
       <Link href="/" className="flex items-center gap-x-2 z-50">
-        {/* <img
-          src="/file.png"
+        <img
+          src="/assets/logo-2.png"
           alt=""
           className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
-        /> */}
-        <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
+        />
+        {/* <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
           logo
-        </span>
+        </span> */}
       </Link>
       <div className="hidden lg:flex items-center gap-x-10">
         <Link
@@ -46,17 +46,23 @@ const Navbar = () => {
         >
           Team
         </Link>
-        <Link
+        {/* <Link
           href="/projects"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           Projects
-        </Link>
+        </Link> */}
         <Link
           href="/events"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           Events
+        </Link>
+        <Link
+          href="/contact-us"
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+        >
+          Contact
         </Link>
         <ThemeToggler />
       </div>
@@ -68,6 +74,7 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* mobile */}
       <div
         className={`w-full h-screen absolute inset-0 bg-transparent z-50 ${
           openSidebar ? "translate-x-0" : "translate-x-full"
@@ -130,6 +137,12 @@ const Navbar = () => {
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               Events
+            </Link>
+            <Link
+              href="/contact-us"
+              className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+            >
+              Contact
             </Link>
           </div>
         </div>

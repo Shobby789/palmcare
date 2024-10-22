@@ -35,12 +35,13 @@ const AboutSection = () => {
           <Image
             width={349}
             height={240}
-            src={"/assets/about-image-1.jpg"}
+            src={"/assets/image-3.jpeg"}
             className="h-[240px] md:h-[390px] w-[48%] object-cover"
           />
           <img
             src={
-              "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
+              // "https://themepanthers.com/wp/risehand/el/wp-content/uploads/2024/01/home-2-about-1-1.jpeg"
+              "/assets/image-2.jpeg"
             }
             className="h-[300px] md:h-full w-[48%] object-cover"
           />
@@ -60,18 +61,18 @@ const AboutSection = () => {
           >
             <FaHandHoldingHeart className="text-lg primary-text" />
             <span className="text-[18px] font-bold primary-text quicksand-fonts">
-              About logo
+              Mission & Vission
             </span>
           </div>
           <h2
-            className="section-heading"
+            className="text-2xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold tracking-tight"
             style={{
               transform: isInView ? "none" : "translateY(100px)",
               opacity: isInView ? 1 : 0,
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
           >
-            Helping is Great Virtue for Every Human’s
+            Mission
           </h2>
           <p
             className={`text-[16px] leading-6 ${
@@ -83,14 +84,36 @@ const AboutSection = () => {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
           >
-            It has been determined through research that when we feel to help,
-            and that someone authentically needs our assistance, and that no
-            trick is being played on us, we reliably do intervene.
-            Interestingly, it has been found that we are less likely to help an
-            examination of the intrinsic worth of helping others, transcending
-            cultural, religious, and societal boundaries.
+            Our mission is to empower underserved communities in rural Pakistan
+            by delivering free solar power systems, ensuring access to clean,
+            safe, and reliable energy for a brighter future.
           </p>
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
+          <h2
+            className="text-2xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold tracking-tight"
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            Vision
+          </h2>
+          <p
+            className={`text-[16px] leading-6 ${
+              theme ? "text-[#fff]" : "text-[#2d2d2d]"
+            }`}
+            style={{
+              transform: isInView ? "none" : "translateY(100px)",
+              opacity: isInView ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            }}
+          >
+            We envision a Pakistan where no family is left in darkness, and all
+            communities have access to sustainable energy, paving the way for
+            improved health, education, and economic opportunities.
+          </p>
+
+          {/* <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6">
             <div className="flex flex-col items-start gap-2">
               {charity_reasons.map((r, i) => {
                 return (
@@ -137,7 +160,8 @@ const AboutSection = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
+
           <div
             style={{
               transform: isInView ? "none" : "translateY(100px)",
