@@ -1,22 +1,51 @@
 export const teamMembers = [
   {
-    name: "John Doe",
-    designation: "Founder & CEO",
-    bio: "John founded the charity in 2015 with a mission to empower underprivileged communities. He brings over 20 years of experience in social work and leadership.",
+    name: "Noor Mehmood",
+    designation: "Co-Founder",
+    bio: "Co-founder of the charity, dedicated to making a significant impact in underprivileged communities.",
     image_url: "/assets/team-2.png",
   },
   {
-    name: "Sarah Lee",
-    designation: "Director of Operations",
-    bio: "With a background in nonprofit management, Sarah oversees day-to-day operations, ensuring the smooth execution of our programs and initiatives.",
+    name: "Ahsan Mehmood",
+    designation: "Co-Founder",
+    bio: "Ahsan, as co-founder, brings strategic vision and dedication to empower communities in need.",
+    image_url: "/assets/team-1.png",
+  },
+  {
+    name: "Erum Hussain",
+    designation: "Director of Fundraising",
+    bio: "Erum leads fundraising efforts, ensuring the resources needed to support our programs and initiatives.",
+    image_url: "/assets/team-2.png",
+  },
+  {
+    name: "Munaza Umar",
+    designation: "Project Manager",
+    bio: "Munaza oversees various projects, bringing her expertise in planning and execution to drive impact.",
+    image_url: "/assets/team-1.png",
+  },
+  {
+    name: "Uzair Farooq",
+    designation: "Project Manager",
+    bio: "With a strong background in project management, Uzair manages key projects for our charity.",
+    image_url: "/assets/team-2.png",
+  },
+  {
+    name: "Abdullah Saleem",
+    designation: "Lead Developer",
+    bio: "Abdullah leads the technical team, bringing our digital initiatives to life.",
     image_url: "/assets/team-1.png",
   },
 ];
 
 export const volunteers = [
   {
-    name: "Ayeshah Shoeb Siddiqui",
-    designation: "Volunteer",
+    name: "Ayeshah Siddiqui",
+    designation: "Youth Fundraiser Coordinator",
+    image_url: "/assets/volunteer-1.jpeg",
+  },
+  {
+    name: "Maira Siddiqui",
+    designation: "Youth Fundraiser Coordinator",
     image_url: "/assets/volunteer-1.jpeg",
   },
 ];

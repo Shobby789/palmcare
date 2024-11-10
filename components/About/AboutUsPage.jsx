@@ -6,10 +6,13 @@ import Button from "../Global/Button";
 import ThemeContext from "@/context/ThemeContext";
 
 const para1 =
-  "Palm Care was founded on the belief that basic needs such as shelter, food, and clean water should not be luxuries, but universal rights. Many of us are incredibly fortunate to be born into circumstances where these essentials are readily available. However, for countless others, these basic needs remain out of reach, hindering their ability to thrive and progress in life. Inspired by Maslow’s hierarchy of needs, we recognise that without meeting these fundamental requirements, individuals cannot focus on higher goals such as education, personal development, and community engagement. At Palm Care, we are dedicated to levelling the playing field by providing support to those who need it most, ensuring that everyone has the opportunity to live a life of dignity and possibility.";
+  "Our mission is to empower struggling families in Pakistan by providing free solar panels that bring lasting financial relief and a pathway to a brighter future. Extreme heat waves and soaring electricity bills have left many households with difficult choices, often forcing families to sacrifice basic necessities just to keep the lights on. Your donations bring reliable, cost-free energy to these homes, enabling children to study and sleep comfortably, even in the heat, while parents can use their hard-earned money to cover essentials like food, medicine, and household needs. By installing solar panels, we’re not only reducing electricity expenses but also providing a sustainable solution to power shortages, helping families live with dignity and security. Together, we’re building a foundation for healthier, more resilient communities.";
 
-const para2 =
-  "Through our initiatives, we aim to make basic necessities accessible to the underprivileged, empowering them to move beyond mere survival and towards a future filled with hope and opportunity.";
+const goal =
+  "Our goal is to bring solar energy to 100 families by the end of 2025, providing them with sustainable, cost-free power to improve their quality of life. Through these 100 installations, we aim to create a ripple effect of positive change, helping families live with greater security and dignity and paving the way for brighter futures.";
+
+const whySolarPanels =
+  "In Islamic tradition, Sadaqah Jariyah is a form of ongoing charity, a gift that continues to benefit others even after one’s lifetime, thereby providing endless rewards to the giver. Installing solar panels for families in need is a powerful act of Sadaqah Jariyah—it not only alleviates the financial burdens of electricity but continuously impacts families by offering them sustainable energy, security, and comfort, especially during times of need. With each panel installed, we create lasting change in people’s lives. Children have the light to study, homes stay cool during intense heat, and parents can afford essentials that were once out of reach. This form of giving aligns with the essence of Sadaqah Jariyah, as it’s a gift that keeps giving, benefiting not only today’s families but also the next generation and beyond.";
 
 export const AboutUsPage = () => {
   const { theme } = useContext(ThemeContext);
@@ -19,39 +22,32 @@ export const AboutUsPage = () => {
       id="about-us"
     >
       <TextParallaxContent
-        // imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imgUrl="/assets/image-1.jpeg"
         subheading=""
-        heading="Get to know us"
+        heading="OUR MISSION IS SIMPLE"
       >
-        <ExampleContent
-          heading={"Get to know us"}
-          paragraph1={para1}
-          paragraph2={para2}
-        />
+        <ExampleContent heading={"OUR MISSION IS SIMPLE"} paragraph1={para1} />
       </TextParallaxContent>
       <TextParallaxContent
-        // imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imgUrl="/assets/image-2.jpeg"
         subheading=""
-        heading="Our Story"
+        heading="Our Goal"
       >
         <ExampleContent
-          heading={"Our Story"}
-          paragraph1={para1}
-          paragraph2={para2}
+          heading={"Our Goal"}
+          paragraph1={goal}
+          // paragraph2={para2}
         />
       </TextParallaxContent>
       <TextParallaxContent
-        // imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         imgUrl="/assets/image-6.jpeg"
         subheading=""
-        heading="Contributions"
+        heading="Why Solar Panels"
       >
         <ExampleContent
-          heading={"Contributions"}
-          paragraph1={para1}
-          paragraph2={para2}
+          heading={"Why Solar Panels"}
+          paragraph1={whySolarPanels}
+          // paragraph2={para2}
         />
       </TextParallaxContent>
     </div>

@@ -17,13 +17,13 @@ const Footer = () => {
 
   return (
     <footer
-      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 md:lg:grid-cols-5 gap-6 horizontal-padding overflow-hidden ${
+      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-6 horizontal-padding overflow-hidden ${
         theme ? "bg-dark text-white" : "bg-yellow-50 text-black"
       }`}
       ref={ref}
     >
       <div
-        className="col-span-1 lg:col-span-2 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8"
+        className="col-span-1 lg:col-span-1 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,
@@ -31,35 +31,17 @@ const Footer = () => {
         }}
       >
         <Link href="/" className="flex items-center gap-2">
-          {/* <img
-            src="/file.png"
+          <img
+            src="/assets/palmcare-logo-2.webp"
             alt="   "
-            className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
-          /> */}
-          <span className="font-normal text-2xl lg:text-4xl 2xl:text-5xl ">
-            Logo
-          </span>
+            className="block w-24 rounded-2xl"
+          />
         </Link>
 
         <p className="font-normal text-[16px] ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea
           excepturi vero saepe autem inventore!
         </p>
-
-        <div className="flex items-center gap-4">
-          <Link href="/" className="">
-            <TiSocialFacebook className="w-full h-full text-2xl" />
-          </Link>
-          <Link href="/" className="">
-            <FaInstagram className="w-full h-full text-lg" />
-          </Link>
-          <Link href="/" className="">
-            <TiSocialTwitter className="w-full h-full text-2xl" />
-          </Link>
-          <Link href="/" className="">
-            <TiSocialLinkedin className="w-full h-full text-2xl" />
-          </Link>
-        </div>
       </div>
 
       <div
@@ -70,8 +52,8 @@ const Footer = () => {
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <h3 className="text-xl 2xl:text-2xl font-bold">Company</h3>
-        <div className="flex flex-col items-start gap-3">
+        <h3 className="text-xl 2xl:text-2xl font-bold">Quick Links</h3>
+        <div className="flex items-center gap-6">
           <Link href="/" className="font-medium text-[16px] ">
             Home
           </Link>
@@ -88,54 +70,20 @@ const Footer = () => {
             Events
           </Link>
         </div>
-      </div>
-
-      <div
-        className="flex flex-col gap-6 2xl:gap-8"
-        style={{
-          transform: isInView ? "none" : "translateY(100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        <h3 className="text-xl 2xl:text-2xl font-bold">Explore</h3>
-        <div className="flex flex-col items-start gap-3">
-          <Link href="/" className="font-medium text-[16px] ">
-            FAQs
+        <div className="flex items-center gap-4">
+          <Link href="/" className="">
+            <TiSocialFacebook className="w-full h-full text-2xl" />
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
-            How it works
+          <Link href="/" className="">
+            <FaInstagram className="w-full h-full text-lg" />
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
-            Qualifications
+          <Link href="/" className="">
+            <TiSocialTwitter className="w-full h-full text-2xl" />
           </Link>
-          <Link href="/" className="font-medium text-[16px] ">
-            Toolkits
+          <Link href="/" className="">
+            <TiSocialLinkedin className="w-full h-full text-2xl" />
           </Link>
         </div>
-      </div>
-
-      <div
-        className="flex flex-col gap-6 2xl:gap-8"
-        style={{
-          transform: isInView ? "none" : "translateY(100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        <h3 className="text-xl 2xl:text-2xl font-bold">Quick Links</h3>
-
-        <ul className="flex flex-col items-start gap-3">
-          <Link href="/" className="font-medium text-[16px] ">
-            Get a job
-          </Link>
-          <Link href="/" className="font-medium text-[16px] ">
-            Recruit Talent
-          </Link>
-          <Link href="/" className="font-medium text-[16px] ">
-            Donate
-          </Link>
-        </ul>
       </div>
     </footer>
   );

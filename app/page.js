@@ -25,6 +25,14 @@ export default function Home() {
       {/* <EventsAndPrograms /> */}
       {/* <NewsAndArticles /> */}
       <AboutUsPage />
+      <div className="w-full horizontal-padding pb-20">
+        <p className="text-sm lg:w-[80%] text-center mx-auto">
+          <span className="font-semibold">Join Us:</span> Be a part of this
+          ongoing impact—your support can light up homes, empower families, and
+          create a legacy of hope. Together, let’s bring the power of Sadaqah
+          Jariyah to those who need it most
+        </p>
+      </div>
     </div>
   );
 }

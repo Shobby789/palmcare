@@ -54,7 +54,7 @@ const TeamMemberCard = ({ member, index }) => {
         <img
           src={member?.image_url}
           alt=""
-          className="absolute bottom-0 w-[90%] left-3"
+          className="absolute bottom-0 h-[300px] lg:h-[360px] w-auto lg:w-[90%] left-0 right-0 mx-auto"
         />
       </div>
       <div className="w-full p-3">

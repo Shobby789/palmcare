@@ -15,15 +15,15 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-50 ${
+      className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-40 ${
         theme ? "bg-black text-white" : "bg-white text-black"
       } relative `}
     >
       <Link href="/" className="flex items-center gap-x-2 z-50">
         <img
-          src="/assets/logo-2.png"
+          src="/assets/palmcare-logo.webp"
           alt=""
-          className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
+          className="block w-12 lg:w-20 rounded-2xl"
         />
         {/* <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
           logo
@@ -48,17 +48,17 @@ const Navbar2 = () => {
         >
           Team
         </Link>
-        <Link
+        {/* <Link
           href="/projects"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           Projects
-        </Link>
+        </Link> */}
         <Link
-          href="/events"
+          href="/our-impact"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
-          Events
+          Our Impact
         </Link>
         <Link
           href="/contact-us"

@@ -8,27 +8,33 @@ import { MdOutlineHouseboat } from "react-icons/md";
 import ThemeContext from "@/context/ThemeContext";
 import { useInView } from "framer-motion";
 import { FaHornbill } from "react-icons/fa";
+import { LuWaves } from "react-icons/lu";
 
 const charity_reasons = [
   {
     title: "Give Right Place",
-    text: "Approximately 27 million individuals in Pakistan lack access to electricity, primarily in rural areas.",
+    text: "27 million individuals in Pakistan lack access to electricity, mostly in rural areas.",
     image: <TbReplace />,
   },
   {
     title: "Save Money & Helath",
-    text: "Many families depend on unsafe alternatives such as candles and kerosene lamps, leading to up to 20,000 fire-related deaths annually",
+    text: "Over 20,000 fire-related deaths occur each year due to unsafe lighting alternatives like candles and kerosene lamps.",
     image: <GiTakeMyMoney />,
   },
   {
     title: "Organisation & Programs",
-    text: "Reliance on traditional fuels contributes to indoor air pollution, resulting in respiratory diseases affecting over 50,000 children each year.",
+    text: "Indoor air pollution from traditional fuels causes respiratory diseases in over 50,000 children annually.",
     image: <MdOutlineHouseboat />,
   },
   {
     title: "Organisation & Programs",
-    text: "A significant number of households face exorbitant electricity bills that they cannot afford. This financial strain has led to tragic consequences, with reports of individuals taking their own lives due to the stress and despair caused by unmanageable energy costs.",
+    text: "High electricity bills have led to tragic financial stress, with reports of individuals taking their lives due to unmanageable costs.",
     image: <FaHornbill />,
+  },
+  {
+    title: "Organisation & Programs",
+    text: "Pakistan, especially Punjab, experiences temperatures that can exceed 122°F (50°C) during summer. Prolonged heatwaves worsen this, causing heat-related illnesses and deaths, particularly among those who can’t afford cooling due to high electricity costs.",
+    image: <LuWaves />,
   },
 ];
 

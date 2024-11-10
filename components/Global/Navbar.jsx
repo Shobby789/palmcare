@@ -15,17 +15,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-50 bg-transparent text-white relative`}
+      className={`w-full py-4 lg:py-6 2xl:py-6 flex items-center justify-between horizontal-padding z-40 bg-transparent text-white relative`}
     >
       <Link href="/" className="flex items-center gap-x-2 z-50">
         <img
-          src="/assets/logo-2.png"
+          src="/assets/palmcare-logo-2.webp"
           alt=""
-          className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
+          className="block w-14 lg:w-20 rounded-xl"
         />
-        {/* <span className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}>
-          logo
-        </span> */}
       </Link>
       <div className="hidden lg:flex items-center gap-x-10">
         <Link
@@ -34,29 +31,19 @@ const Navbar = () => {
         >
           Home
         </Link>
-        {/* <Link
-          href="/about"
-          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
-        >
-          About
-        </Link> */}
+
         <Link
           href="/team"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
           Team
         </Link>
-        {/* <Link
-          href="/projects"
-          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
-        >
-          Projects
-        </Link> */}
+
         <Link
-          href="/events"
+          href="/our-impact"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
-          Events
+          Our Impact
         </Link>
         <Link
           href="/contact-us"
@@ -80,63 +67,48 @@ const Navbar = () => {
           openSidebar ? "translate-x-0" : "translate-x-full"
         } transition-all duration-500`}
       >
-        <button
-          className={`block z-50 absolute left-4 top-4 bg-white ${
-            openSidebar
-              ? "opacity-100 transition-all duration-1000"
-              : "opacity-0"
-          } `}
-          onClick={handleOpenSidebar}
-        >
-          <IoClose className={`w-6 h-6 z-10 text-black`} />
-        </button>
         <div
           className={`p-7 relative h-full w-2/3 float-end shadow-xl ${
             theme ? "bg-black text-white" : "bg-white text-black"
           }`}
         >
-          <Link href="/" className="flex items-center gap-x-2 z-50">
-            {/* <img
-          src="/file.png"
-          alt=""
-          className="block w-12 lg:w-14 2xl:w-16 rounded-2xl"
-        /> */}
-            <span
-              className={`font-semibold text-xl md:text-3xl 2xl:text-4xl z-50`}
-            >
-              logo
-            </span>
+          <button
+            className={`block z-50 absolute left-4 top-4 bg-white ${
+              openSidebar
+                ? "opacity-100 transition-all duration-1000"
+                : "opacity-0"
+            } `}
+            onClick={handleOpenSidebar}
+          >
+            <IoClose className={`w-6 h-6 z-10 text-black`} />
+          </button>
+          <Link href="/" className="mt-5 z-50">
+            <img
+              src="/assets/palmcare-logo-2.webp"
+              alt=""
+              className="block w-20"
+            />
           </Link>
-          <div className="flex flex-col items-start gap-y-5 pt-20">
+          <div className="flex flex-col items-start gap-y-5 pt-10">
             <Link
               href="/"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               Home
             </Link>
-            {/* <Link
-              href="/about"
-              className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
-            >
-              About
-            </Link> */}
+
             <Link
               href="/team"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
               Team
             </Link>
+
             <Link
-              href="/projects"
+              href="/our-impact"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
             >
-              Projects
-            </Link>
-            <Link
-              href="/events"
-              className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
-            >
-              Events
+              Our Impact
             </Link>
             <Link
               href="/contact-us"

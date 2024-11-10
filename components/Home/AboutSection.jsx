@@ -84,9 +84,11 @@ const AboutSection = () => {
               transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
             }}
           >
-            Our mission is to empower underserved communities in rural Pakistan
-            by delivering free solar power systems, ensuring access to clean,
-            safe, and reliable energy for a brighter future.
+            At Palm Care Foundation, our mission is to empower underserved
+            communities in rural Pakistan by delivering free premium solar power
+            systems. We ensure access to clean, safe, and reliable energy,
+            paving the way for improved health, education, and economic
+            opportunities.
           </p>
           <h2
             className="text-2xl md:text-2xl lg:text-3xl 2xl:text-4xl font-bold tracking-tight"

@@ -1,6 +1,10 @@
 import AboutUsHero from "@/components/About/AboutUsHero";
 import EventGrid from "@/components/Events/EventGrid";
 import Navbar from "@/components/Global/Navbar";
+import ImpactStatistics from "@/components/OurImpact/ImpactStatistics";
+import ImpactStory from "@/components/OurImpact/ImpactStory";
+import ImpactTestimonials from "@/components/OurImpact/ImpactTestimonials";
+import SupportSection from "@/components/OurImpact/SupportSection";
 import React from "react";
 
 export const metadata = {
@@ -15,11 +19,15 @@ const page = () => {
         <Navbar />
         <div className="w-full pt-20 lg:pt-24 2xl:pt-60 flex flex-col items-center justify-center gap-5 horizontal-padding text-white">
           <h1 className="text-3xl md:text-4xl lg:text-8xl 2xl:text-8xl font-bold tracking-tight">
-            Events
+            Our Imapct
           </h1>
         </div>
       </main>
-      <EventGrid />
+      {/* <EventGrid /> */}
+      <ImpactStory />
+      <ImpactStatistics />
+      <ImpactTestimonials />
+      <SupportSection />
     </div>
   );
 };

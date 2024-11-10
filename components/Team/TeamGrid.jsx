@@ -7,9 +7,9 @@ import ThemeContext from "@/context/ThemeContext";
 const TeamGrid = () => {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className="w-full horizontal-padding py-40">
+    <div className="w-full horizontal-padding py-20 lg:py-40">
       <div
-        className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-36 ${
+        className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 ${
           theme && "bg-dark text-white"
         }`}
       >
@@ -18,7 +18,7 @@ const TeamGrid = () => {
         })}
       </div>
 
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-36 mt-20">
+      <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 mt-20">
         {volunteers.map((v, index) => {
           return (
             <div
@@ -26,17 +26,11 @@ const TeamGrid = () => {
                 theme ? "bg-dark text-white" : "bg-white text-black"
               }`}
             >
-              {/* <div
-                className={`h-[300px] overflow-x-hidden overflow-y-visible ${
-                  theme ? "bg-[#1c1c1c]" : "bg-primary"
-                } w-full relative`}
-              > */}
               <img
                 src={v?.image_url}
                 alt=""
-                className="w-[100%] left-3 h-[300px] bg-cover rounded-full"
+                className="w-[90%] md:w-[100%] left-3 h-[280px] bg-cover rounded-full"
               />
-              {/* </div> */}
               <div className="w-full p-3">
                 <h2 className="font-bold text-xl lg:text-2xl primary-text">
                   {v?.name}
