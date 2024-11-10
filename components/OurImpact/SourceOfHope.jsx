@@ -2,12 +2,12 @@
 import ThemeContext from "@/context/ThemeContext";
 import React, { useContext } from "react";
 
-const ImpactTestimonials = () => {
+const SourceOfHope = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <section
       className={`vertical-padding horizontal-padding text-center ${
-        theme ? "bg-black text-white" : "bg-gray-100 text-black"
+        theme ? "bg-black text-white" : "bg-white text-black"
       }`}
     >
       <h2 className="section-heading">
@@ -27,4 +27,4 @@ const ImpactTestimonials = () => {
   );
 };
 
-export default ImpactTestimonials;
+export default SourceOfHope;

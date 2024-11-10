@@ -81,7 +81,7 @@ const ContactPopupForm = ({ onClose }) => {
           onClick={onClose}
           className="w-6 h-6 bg-gray-100 rounded-full absolute top-5 right-5 z-20 p-1"
         >
-          <IoClose className="w-full h-full" />
+          <IoClose className={`w-full h-full ${theme && "text-black"}`} />
         </button>
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="flex flex-col items-start gap-1">

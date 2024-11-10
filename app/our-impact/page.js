@@ -4,6 +4,7 @@ import Navbar from "@/components/Global/Navbar";
 import ImpactStatistics from "@/components/OurImpact/ImpactStatistics";
 import ImpactStory from "@/components/OurImpact/ImpactStory";
 import ImpactTestimonials from "@/components/OurImpact/ImpactTestimonials";
+import SourceOfHope from "@/components/OurImpact/SourceOfHope";
 import SupportSection from "@/components/OurImpact/SupportSection";
 import React from "react";
 
@@ -27,6 +28,7 @@ const page = () => {
       <ImpactStory />
       <ImpactStatistics />
       <ImpactTestimonials />
+      <SourceOfHope />
       <SupportSection />
     </div>
   );

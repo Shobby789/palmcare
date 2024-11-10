@@ -20,8 +20,11 @@ const SupportSection = () => {
         <h2 className="section-heading">
           Be the Spark That Lights Up a Family’s Life
         </h2>
-        <p className="mt-4 text-lg">
-          Your support can bring the power of solar energy to families in need.
+        <p className="mt-4 text-lg lg:w-[80%] mx-auto">
+          Your support can break the cycle of darkness for families like Pervaiz
+          and Nasreen’s. Help us bring the power of solar energy to those who
+          need it most—together, we can create lasting change and ignite
+          brighter future.
         </p>
         <div className="flex justify-center gap-4 mt-6">
           <button
