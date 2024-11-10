@@ -2,6 +2,7 @@ import { AboutUsPage } from "@/components/About/AboutUsPage";
 import AboutSection from "@/components/Home/AboutSection";
 import CausesForDonation from "@/components/Home/CausesForDonation";
 import EventsAndPrograms from "@/components/Home/EventsAndPrograms";
+import FatimaStory from "@/components/Home/FatimaStory";
 import FeaturesSection from "@/components/Home/FeaturesSection";
 import Hero from "@/components/Home/Hero";
 import NewsAndArticles from "@/components/Home/NewsAndArticles";
@@ -22,6 +23,7 @@ export default function Home() {
       {/* <CausesForDonation /> */}
       <WhyDonateUs />
       <FeaturesSection />
+      <FatimaStory />
       {/* <EventsAndPrograms /> */}
       {/* <NewsAndArticles /> */}
       <AboutUsPage />
