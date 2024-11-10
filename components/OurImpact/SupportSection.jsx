@@ -1,14 +1,22 @@
 "use client";
-import React from "react";
+import ThemeContext from "@/context/ThemeContext";
+import React, { useContext } from "react";
 
 const SupportSection = () => {
+  const { theme } = useContext(ThemeContext);
   const handleNavigateToDonate = () => {
     window.location.href = "https://givebutter.com/vHIBtO";
   };
 
   return (
-    <section className="vertical-padding horizontal-padding">
-      <div className="w-full bg-yellow-200 text-center text-black vertical-padding rounded-3xl px-6">
+    <section
+      className={`vertical-padding horizontal-padding ${theme && "bg-black"}`}
+    >
+      <div
+        className={`w-full text-center vertical-padding rounded-3xl px-6 ${
+          theme ? "bg-[#1c1c1c] text-white" : "bg-yellow-200 text-black"
+        }`}
+      >
         <h2 className="section-heading">
           Be the Spark That Lights Up a Family’s Life
         </h2>

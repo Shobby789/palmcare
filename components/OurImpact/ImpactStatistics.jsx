@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import ThemeContext from "@/context/ThemeContext";
+import React, { useContext } from "react";
 
 const ImpactStatistics = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className="vertical-padding horizontal-padding bg-white text-center">
+    <section
+      className={`vertical-padding horizontal-padding text-center ${
+        theme ? "bg-black text-white" : "bg-white text-black"
+      }`}
+    >
       <h2 className="section-heading">Our Reach</h2>
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
         <div className="text-center">

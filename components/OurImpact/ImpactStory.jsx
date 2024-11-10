@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import ThemeContext from "@/context/ThemeContext";
+import React, { useContext } from "react";
 
 const ImpactStory = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <section className={`vertical-padding horizontal-padding bg-gray-100`}>
+    <section
+      className={`vertical-padding horizontal-padding ${
+        theme ? "bg-black text-white" : "bg-gray-100"
+      }`}
+    >
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="flex-1 flex flex-col items-start justify-center">
           <h2 className="section-heading mb-4">A New Dawn with Solar Power</h2>
