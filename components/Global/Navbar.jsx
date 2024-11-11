@@ -31,7 +31,12 @@ const Navbar = () => {
         >
           Home
         </Link>
-
+        {/* <Link
+          href="#about-us"
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+        >
+          About Us
+        </Link> */}
         <Link
           href="/team"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}

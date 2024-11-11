@@ -1,5 +1,3 @@
-import AboutUsHero from "@/components/About/AboutUsHero";
-import EventGrid from "@/components/Events/EventGrid";
 import Navbar from "@/components/Global/Navbar";
 import ImpactStatistics from "@/components/OurImpact/ImpactStatistics";
 import ImpactStory from "@/components/OurImpact/ImpactStory";
@@ -9,7 +7,7 @@ import SupportSection from "@/components/OurImpact/SupportSection";
 import React from "react";
 
 export const metadata = {
-  title: "Palmcare - Events",
+  title: "Palmcare - Our Impact",
   description: "Palmcare Charity Upcoming Events",
 };
 

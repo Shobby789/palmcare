@@ -30,9 +30,14 @@ const SupportSection = () => {
           <button
             type="button"
             onClick={handleNavigateToDonate}
-            className="bg-black hover:bg-gray-800 text-white font-medium py-4 px-8 rounded-full"
+            className="relative overflow-hidden bg-black text-white font-medium py-2 px-4 rounded-full w-28 md:w-40 h-12"
           >
-            Donate Now
+            <span className="absolute inset-0 flex items-center justify-center transition-transform duration-[0.4s] ease-in-out transform button-text1">
+              Join Us
+            </span>
+            <span className="absolute inset-0 flex items-center justify-center transition-transform duration-[0.4s] ease-in-out transform button-text2">
+              Join the Cause
+            </span>
           </button>
         </div>
       </div>

@@ -87,7 +87,7 @@ const ContactForm = () => {
               id="name"
               onChange={formik.handleChange}
               value={formik.values.name}
-              className={`w-full p-3.5 text-sm outline-none ${
+              className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
                 theme ? "bg-[#2d2d2d]" : "bg-white"
               }`}
               placeholder="Enter Your Name"
@@ -106,7 +106,7 @@ const ContactForm = () => {
               id="email"
               onChange={formik.handleChange}
               value={formik.values.email}
-              className={`w-full p-3.5 text-sm outline-none ${
+              className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
                 theme ? "bg-[#2d2d2d]" : "bg-white"
               }`}
               placeholder="Your Email Address"
@@ -127,7 +127,7 @@ const ContactForm = () => {
             id="subject"
             onChange={formik.handleChange}
             value={formik.values.subject}
-            className={`w-full p-3.5 text-sm outline-none ${
+            className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
               theme ? "bg-[#2d2d2d]" : "bg-white"
             }`}
             placeholder="Enter Your Subject"
@@ -146,7 +146,7 @@ const ContactForm = () => {
             id="message"
             onChange={formik.handleChange}
             value={formik.values.message}
-            className={`w-full p-3.5 text-sm outline-none ${
+            className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
               theme ? "bg-[#2d2d2d]" : "bg-white"
             }`}
             placeholder="Enter Your Message Here..."
@@ -156,13 +156,19 @@ const ContactForm = () => {
             <div className="text-sm text-red-500">{formik.errors.message}</div>
           ) : null}
         </div>
-
-        <button
-          type="submit"
-          className="bg-primary text-sm font-semibold py-3 text-white mt-2"
-        >
-          Submit
-        </button>
+        <div className="w-full">
+          <button
+            type="submit"
+            className="relative overflow-hidden bg-primary text-white font-medium py-2 px-4 rounded-full w-full block h-12"
+          >
+            <span className="absolute inset-0 flex items-center justify-center transition-transform duration-[0.4s] ease-in-out transform button-text1">
+              Submit
+            </span>
+            <span className="absolute inset-0 flex items-center justify-center transition-transform duration-[0.4s] ease-in-out transform button-text2">
+              Join the Cause
+            </span>
+          </button>
+        </div>
       </form>
     </section>
   );

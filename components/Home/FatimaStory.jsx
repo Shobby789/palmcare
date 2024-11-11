@@ -1,8 +1,14 @@
+"use client";
 import React from "react";
+import Button2 from "../Global/Button2";
 
 const FatimaStory = () => {
+  const handleNavigateToImpact = () => {
+    window.location.href = "/our-impact";
+  };
+
   return (
-    <section className="w-full vertical-padding horizontal-padding">
+    <section className="w-full pb-20 horizontal-padding">
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
           <img
@@ -13,13 +19,18 @@ const FatimaStory = () => {
         </div>
         <div className="flex flex-col items-start justify-center">
           <h2 className="section-heading">Fatima's Story</h2>
-          <p className="mt-4">
+          <p className="my-4">
             For years, Fatima’s family lived without electricity, relying on
             hazardous candles that posed a constant fire risk. Since receiving a
             solar power system from Project Noor Foundation, their home is now
             safe, and Fatima can study at night. With your support, we can
             extend our reach to more families like Fatima’s.
           </p>
+          <Button2
+            text1={"Our Impact"}
+            text2={"Join Us"}
+            onclick={handleNavigateToImpact}
+          />
         </div>
       </div>
     </section>

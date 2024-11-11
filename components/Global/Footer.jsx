@@ -63,11 +63,11 @@ const Footer = () => {
           <Link href="/team" className="font-medium text-[16px] ">
             Team
           </Link>
-          <Link href="/projects" className="font-medium text-[16px] ">
-            Projects
+          <Link href="/our-impact" className="font-medium text-[16px] ">
+            Our Impact
           </Link>
-          <Link href="/events" className="font-medium text-[16px] ">
-            Events
+          <Link href="/contact-us" className="font-medium text-[16px] ">
+            Contact
           </Link>
         </div>
         <div className="flex items-center gap-4">

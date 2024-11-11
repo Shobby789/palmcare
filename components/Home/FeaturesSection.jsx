@@ -12,67 +12,57 @@ const FeaturesSection = () => {
 
   return (
     <section
-      className="w-full py-16 bg-[#F2C75C] horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-white gap-6 overflow-hidden"
+      className="w-full py-16 horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-black gap-6 overflow-hidden"
       ref={ref}
     >
       <div
-        className="flex flex-col items-center gap-3"
+        className="flex flex-col items-center gap-3 border-2 border-[#F2C75C] p-10"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
         }}
       >
-        <MdOutlineVolunteerActivism className="text-white text-5xl" />
-        <h2 className="text-2xl 2xl:text-3xl font-bold">Volunteering</h2>
-        <p className="text-center text-base 2xl:text-lg">
-          Act of an individual or group freely giving time and labor, often for
-          community service.
+        <h2 className="text-2xl 2xl:text-3xl font-extrabold">14+</h2>
+        <p className="text-center text-sm 2xl:text-lg">Hours load shedding</p>
+      </div>
+      <div
+        className="flex flex-col items-center gap-3 border-2 border-[#F2C75C] p-10"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
+        }}
+      >
+        <h2 className="text-2xl 2xl:text-3xl font-extrabold">155%</h2>
+        <p className="text-center text-sm 2xl:text-lg">
+          Increase in electricity bills since 2021
         </p>
       </div>
       <div
-        className="flex flex-col items-center gap-3"
+        className="flex flex-col items-center gap-3 border-2 border-[#F2C75C] p-10"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
         }}
       >
-        <GoGlobe className="text-white text-5xl" />
-        <h2 className="text-2xl 2xl:text-3xl font-bold">Environment</h2>
-        <p className="text-center text-base 2xl:text-lg">
-          The natural environment or natural world encompasses all living and
-          non-living things.
+        <h2 className="text-2xl 2xl:text-3xl font-extrabold">20,000+</h2>
+        <p className="text-center text-sm 2xl:text-lg">
+          Fire-related deaths annually
         </p>
       </div>
       <div
-        className="flex flex-col items-center gap-3"
+        className="flex flex-col items-center gap-3 border-2 border-[#F2C75C] p-10"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,
           transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
         }}
       >
-        <FaWheelchair className="text-white text-5xl" />
-        <h2 className="text-2xl 2xl:text-3xl font-bold">Senior Caring</h2>
-        <p className="text-center text-base 2xl:text-lg">
-          Term that includes a myriad of services that can be provided to
-          seniors and elder.
-        </p>
-      </div>
-      <div
-        className="flex flex-col items-center gap-3"
-        style={{
-          transform: isInView ? "none" : "translateY(100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.55s",
-        }}
-      >
-        <GiReceiveMoney className="text-white text-5xl" />
-        <h2 className="text-2xl 2xl:text-3xl font-bold">Donations</h2>
-        <p className="text-center text-base 2xl:text-lg">
-          Including money, alms, services, or goods such as clothing, toys,
-          food, or vehicles
+        <h2 className="text-2xl 2xl:text-3xl font-extrabold">217+</h2>
+        <p className="text-center text-sm 2xl:text-lg">
+          Suicides due to high bills in 2024
         </p>
       </div>
     </section>

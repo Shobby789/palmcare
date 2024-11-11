@@ -1,7 +1,6 @@
 "use client";
 import React, { useContext, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FiArrowUpRight } from "react-icons/fi";
 import Button from "../Global/Button";
 import ThemeContext from "@/context/ThemeContext";
 
@@ -24,20 +23,16 @@ export const AboutUsPage = () => {
       <TextParallaxContent
         imgUrl="/assets/image-1.jpeg"
         subheading=""
-        heading="OUR MISSION IS SIMPLE"
+        heading="About Us"
       >
-        <ExampleContent heading={"OUR MISSION IS SIMPLE"} paragraph1={para1} />
+        <ExampleContent heading={"About Us"} paragraph1={para1} />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="/assets/image-2.jpeg"
         subheading=""
         heading="Our Goal"
       >
-        <ExampleContent
-          heading={"Our Goal"}
-          paragraph1={goal}
-          // paragraph2={para2}
-        />
+        <ExampleContent heading={"Our Goal"} paragraph1={goal} />
       </TextParallaxContent>
       <TextParallaxContent
         imgUrl="/assets/image-6.jpeg"
@@ -47,7 +42,6 @@ export const AboutUsPage = () => {
         <ExampleContent
           heading={"Why Solar Panels"}
           paragraph1={whySolarPanels}
-          // paragraph2={para2}
         />
       </TextParallaxContent>
     </div>
@@ -63,6 +57,7 @@ const TextParallaxContent = ({ imgUrl, subheading, heading, children }) => {
         paddingLeft: IMG_PADDING,
         paddingRight: IMG_PADDING,
       }}
+      id="about-us"
     >
       <div className="relative min-h-[100vh]">
         <StickyImage imgUrl={imgUrl} />

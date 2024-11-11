@@ -31,7 +31,7 @@ const ImpactStory = () => {
         </div>
         <div className="flex-1 flex items-center justify-center">
           <img
-            src="/assets/image-8.jpeg"
+            src="/assets/our-impact-01.jpeg"
             alt="Family benefiting from solar power"
             className="rounded-lg shadow-lg lg:h-[70vh]"
           />
