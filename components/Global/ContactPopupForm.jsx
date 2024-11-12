@@ -83,6 +83,7 @@ const ContactPopupForm = ({ onClose }) => {
         >
           <IoClose className={`w-full h-full ${theme && "text-black"}`} />
         </button>
+
         <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-5">
           <div className="flex flex-col items-start gap-1">
             <label htmlFor="name" className="text-sm font-medium">
@@ -94,7 +95,7 @@ const ContactPopupForm = ({ onClose }) => {
               id="name"
               onChange={formik.handleChange}
               value={formik.values.name}
-              className={`w-full p-3.5 text-sm outline-none ${
+              className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
                 theme ? "bg-[#2d2d2d]" : "bg-yellow-100"
               }`}
               placeholder="Enter Your Name"
@@ -113,7 +114,7 @@ const ContactPopupForm = ({ onClose }) => {
               id="email"
               onChange={formik.handleChange}
               value={formik.values.email}
-              className={`w-full p-3.5 text-sm outline-none ${
+              className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
                 theme ? "bg-[#2d2d2d]" : "bg-yellow-100"
               }`}
               placeholder="Your Email Address"
@@ -134,7 +135,7 @@ const ContactPopupForm = ({ onClose }) => {
             id="subject"
             onChange={formik.handleChange}
             value={formik.values.subject}
-            className={`w-full p-3.5 text-sm outline-none ${
+            className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
               theme ? "bg-[#2d2d2d]" : "bg-yellow-100"
             }`}
             placeholder="Enter Your Subject"
@@ -153,7 +154,7 @@ const ContactPopupForm = ({ onClose }) => {
             id="message"
             onChange={formik.handleChange}
             value={formik.values.message}
-            className={`w-full p-3.5 text-sm outline-none ${
+            className={`w-full p-3.5 text-sm outline-none rounded-2xl ${
               theme ? "bg-[#2d2d2d]" : "bg-yellow-100"
             }`}
             placeholder="Enter Your Message Here..."
@@ -166,7 +167,7 @@ const ContactPopupForm = ({ onClose }) => {
 
         <button
           type="submit"
-          className="bg-primary text-sm font-semibold py-3 text-white mt-2"
+          className="bg-primary text-sm font-semibold py-3 text-white mt-2 rounded-2xl"
         >
           Submit
         </button>

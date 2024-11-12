@@ -1,18 +1,23 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 import { GoGlobe } from "react-icons/go";
 import { FaWheelchair } from "react-icons/fa6";
 import { GiReceiveMoney } from "react-icons/gi";
 import { useInView } from "framer-motion";
+import ThemeContext from "@/context/ThemeContext";
 
 const FeaturesSection = () => {
+  const { theme } = useContext(ThemeContext);
+
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   return (
     <section
-      className="w-full py-16 horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-black gap-6 overflow-hidden"
+      className={`w-full py-16 horizontal-padding grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ${
+        theme ? "bg-black text-white" : "bg-white text-black"
+      } gap-6 overflow-hidden`}
       ref={ref}
     >
       <div

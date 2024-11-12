@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
       >
         <ThemeProvider>
           <ScrollToTopButton />
-          {/* {showPopup && <ContactPopupForm onClose={closePopup} />} */}
+          {showPopup && <ContactPopupForm onClose={closePopup} />}
           <DonateButton />
           {children}
           <Footer />

@@ -16,7 +16,7 @@ export const Coo_Founders = [
     name: "Noor Mehmood",
     designation: "Co-Founder",
     bio: "Co-founder of the charity, dedicated to making a significant impact in underprivileged communities.",
-    image_url: "/assets/noo-mehmood-removebg-preview.png",
+    image_url: "/assets/team-1 - Copy.png",
   },
   {
     name: "Ahsan Mehmood",
@@ -37,7 +37,7 @@ export const team_members = [
     name: "Munaza Umar",
     designation: "Project Manager",
     bio: "Munaza oversees various projects, bringing her expertise in planning and execution to drive impact.",
-    image_url: "/assets/team-1 - Copy.png",
+    image_url: "/assets/user.png",
   },
   {
     name: "Uzair Farooq",

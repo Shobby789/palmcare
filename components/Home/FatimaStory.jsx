@@ -1,14 +1,21 @@
 "use client";
-import React from "react";
+import React, { useContext } from "react";
 import Button2 from "../Global/Button2";
+import ThemeContext from "@/context/ThemeContext";
 
 const FatimaStory = () => {
+  const { theme } = useContext(ThemeContext);
+
   const handleNavigateToImpact = () => {
     window.location.href = "/our-impact";
   };
 
   return (
-    <section className="w-full pb-20 horizontal-padding">
+    <section
+      className={`w-full pb-20 horizontal-padding ${
+        theme ? "bg-black text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div>
           <img
