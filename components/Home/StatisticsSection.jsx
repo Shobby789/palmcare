@@ -1,12 +1,7 @@
 "use client";
 import React, { useContext, useRef } from "react";
-import { MdFoundation } from "react-icons/md";
-import { BiDonateBlood } from "react-icons/bi";
-import { LiaUsersSolid } from "react-icons/lia";
-import { PiFilesDuotone } from "react-icons/pi";
 import ThemeContext from "@/context/ThemeContext";
 import { useInView } from "framer-motion";
-import StatisticsCard from "../Global/StatisticsCard";
 
 const StatisticsSection = () => {
   const { theme } = useContext(ThemeContext);
@@ -15,101 +10,84 @@ const StatisticsSection = () => {
 
   return (
     <section
-      className={`w-full py-6 horizontal-padding ${
-        theme && "bg-dark text-white"
-      }`}
+      className={`w-full py-12 lg:py-20 horizontal-padding bg-dark text-white`}
     >
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-5"
+        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-10"
         ref={ref}
       >
         <div
-          className={`flex flex-col items-center gap-3 border group ${
-            theme
-              ? " primary-border hover:border-[#F2C75C]"
-              : "hover:border-[#F2C75C] primary-border"
-          } transition-all duration-300 px-5 py-14 2xl:py-16`}
+          className={`flex flex-col items-center gap-3 px-4 text-center`}
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#F2C75C] transition-all duration-300">
-            35+
-          </h2>
-          <span className="quicksand-fonts font-bold text-[16px] text-[#F2C75C] transition-all duration-300">
-            Years of Foundation
+          <img
+            src="/assets/solar-plates.png"
+            alt="solar-plates"
+            className="w-60 2xl:w-80"
+          />
+          <span className="quicksand-fonts font-bold text-[16px] text-[#fff] transition-all duration-300">
+            Premium 580-watts x2 solar panels
           </span>
-          <MdFoundation className="w-10 md:w-12 h-10 md:h-12 text-[#F2C75C] transition-all duration-300" />
         </div>
+
         <div
-          className={`flex flex-col items-center gap-3 border group ${
-            theme
-              ? " primary-border hover:border-[#F2C75C]"
-              : "hover:border-[#F2C75C] primary-border"
-          } transition-all duration-300 px-5 py-14 2xl:py-16`}
+          className={`flex flex-col items-center gap-3 px-4 text-center`}
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#F2C75C] transition-all duration-300">
-            68+
-          </h2>
-          <span className="quicksand-fonts font-bold text-[16px] text-[#F2C75C] transition-all duration-300">
-            Monthly Donate
+          <img
+            src="/assets/car-battery.png"
+            alt="battery"
+            className="w-60 2xl:w-80"
+          />
+          <span className="quicksand-fonts font-bold text-[16px] text-[#fff] transition-all duration-300">
+            21-plate battery for storing power
           </span>
-          <BiDonateBlood className="w-10 md:w-12 h-10 md:h-12 text-[#F2C75C] transition-all duration-300" />
         </div>
+
         <div
-          className={`flex flex-col items-center gap-3 border group ${
-            theme
-              ? " primary-border hover:border-[#F2C75C]"
-              : "hover:border-[#F2C75C] primary-border"
-          } transition-all duration-300 px-5 py-14 2xl:py-16`}
+          className={`flex flex-col items-center gap-4 px-4 text-center`}
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#F2C75C] transition-all duration-300">
-            8k+
-          </h2>
-          <span className="quicksand-fonts font-bold text-[16px] text-[#F2C75C] transition-all duration-300">
-            Global Partners
+          <img
+            src="/assets/inverter.png"
+            alt="inverter"
+            className="w-32 2xl:w-44"
+          />
+          <span className="quicksand-fonts font-bold text-[16px] text-[#fff] transition-all duration-300">
+            Inverter for converting power
           </span>
-          <LiaUsersSolid className="w-10 md:w-12 h-10 md:h-12 text-[#F2C75C] transition-all duration-300" />
         </div>
+
         <div
-          className={`flex flex-col items-center gap-3 border group ${
-            theme
-              ? " primary-border hover:border-[#F2C75C]"
-              : "hover:border-[#F2C75C] primary-border"
-          } transition-all duration-300 px-5 py-14 2xl:py-16`}
+          className={`flex flex-col items-center gap-3 px-4 text-center`}
           style={{
             transform: isInView ? "none" : "translateY(100px)",
             opacity: isInView ? 1 : 0,
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          <h2 className="text-3xl md:text-5xl font-bold text-[#F2C75C] transition-all duration-300">
-            93+
-          </h2>
-          <span className="quicksand-fonts font-bold text-[16px] text-[#F2C75C] transition-all duration-300">
-            Projects Complete
+          <img
+            src="/assets/power-breaker.png"
+            alt="power-breaker"
+            className="w-40 2xl:w-52"
+          />
+          <span className="quicksand-fonts font-bold text-[16px] text-[#fff] transition-all duration-300">
+            Premium Breaker and wiring installed for a safe
           </span>
-          <PiFilesDuotone className="w-10 md:w-12 h-10 md:h-12 text-[#F2C75C] transition-all duration-300" />
         </div>
       </div>
-      {/* <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-5">
-        <StatisticsCard />
-        <StatisticsCard />
-        <StatisticsCard />
-        <StatisticsCard />
-      </div> */}
     </section>
   );
 };
