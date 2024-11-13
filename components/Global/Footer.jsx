@@ -17,13 +17,22 @@ const Footer = () => {
 
   return (
     <footer
-      className={`w-full py-12 xl:py-24 2xl:py-32 grid grid-cols-1 lg:grid-cols-2 gap-6 horizontal-padding overflow-hidden ${
+      className={`w-full py-12 xl:py-10 2xl:py-32 flex justify-center gap-6 horizontal-padding overflow-hidden ${
         theme ? "bg-dark text-white" : "bg-yellow-50 text-black"
       }`}
       ref={ref}
     >
-      <div
+      {/* <div
         className="col-span-1 lg:col-span-1 2xl:pr-28 flex flex-col items-start justify-start gap-6 2xl:gap-8"
+        style={{
+          transform: isInView ? "none" : "translateY(100px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      ></div> */}
+
+      <div
+        className="flex flex-col items-center gap-6 2xl:gap-8"
         style={{
           transform: isInView ? "none" : "translateY(100px)",
           opacity: isInView ? 1 : 0,
@@ -37,21 +46,6 @@ const Footer = () => {
             className="block w-24 rounded-2xl"
           />
         </Link>
-
-        <p className="font-normal text-[16px] ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ea
-          excepturi vero saepe autem inventore!
-        </p>
-      </div>
-
-      <div
-        className="flex flex-col gap-6 2xl:gap-8"
-        style={{
-          transform: isInView ? "none" : "translateY(100px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
         <h3 className="text-xl 2xl:text-2xl font-bold">Quick Links</h3>
         <div className="flex items-center gap-6">
           <Link href="/" className="font-medium text-[16px] ">
