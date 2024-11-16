@@ -20,7 +20,7 @@ const TeamGrid = () => {
       }`}
     >
       <div className="w-full">
-        <h2 className="mb-10 lg:mb-10 section-heading">Co-Founders</h2>
+        {/* <h2 className="mb-10 lg:mb-10 section-heading">Co-Founders</h2> */}
         <div
           className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 ${
             theme && "bg-dark text-white"
@@ -60,7 +60,7 @@ const TeamGrid = () => {
       </div>
 
       <div className="w-full mt-10">
-        <h2 className="mb-7 lg:mb-7 section-heading">Team Members</h2>
+        {/* <h2 className="mb-7 lg:mb-7 section-heading">Team Members</h2> */}
         <div
           className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-5 ${
             theme && "bg-dark text-white"
@@ -96,7 +96,7 @@ const TeamGrid = () => {
       </div>
 
       <div className="w-full mt-10">
-        <h2 className="section-heading mb-10 lg:mb-3">Volunteers</h2>
+        {/* <h2 className="section-heading mb-10 lg:mb-3">Volunteers</h2> */}
         <div
           className={`w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6 ${
             theme && "bg-dark text-white"

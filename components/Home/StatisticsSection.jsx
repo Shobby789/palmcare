@@ -9,11 +9,20 @@ const StatisticsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section
-      className={`w-full py-12 lg:py-20 horizontal-padding bg-dark text-white`}
-    >
+    <section className={`w-full py-12 lg:py-20`}>
+      <div className="w-full flex flex-col items-center gap-4 mb-10 horizontal-padding ">
+        <h2 className="section-heading">How We Bring Light to Rural Homes</h2>
+        <p className="lg:w-2/3 text-center">
+          We bring lasting light to villages in Pakistan with our premium solar
+          systems. Each installation includes a 25-year warranty on the panels
+          and a one-year warranty on the inverter and battery, ensuring
+          reliable, long-term power for families in need. This is more than just
+          an installation — it’s a commitment to brighter, more sustainable
+          futures for communities that have faced darkness for too long.
+        </p>
+      </div>
       <div
-        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-10"
+        className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-7 gap-y-10 bg-dark text-white py-12 lg:py-20 horizontal-padding "
         ref={ref}
       >
         <div
