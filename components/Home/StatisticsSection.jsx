@@ -9,7 +9,11 @@ const StatisticsSection = () => {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className={`w-full py-12 lg:py-20`}>
+    <section
+      className={`w-full py-12 lg:py-20 ${
+        theme ? "bg-black text-white" : "bg-white text-black"
+      }`}
+    >
       <div className="w-full flex flex-col items-center gap-4 mb-10 horizontal-padding ">
         <h2 className="section-heading">How We Bring Light to Rural Homes</h2>
         <p className="lg:w-2/3 text-center">
