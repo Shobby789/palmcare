@@ -54,6 +54,12 @@ const Navbar2 = () => {
           Our Impact
         </Link>
         <Link
+          href="/blogs"
+          className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+        >
+          Blogs
+        </Link>
+        <Link
           href="/contact-us"
           className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
         >
@@ -115,7 +121,12 @@ const Navbar2 = () => {
             >
               Team
             </Link>
-
+            <Link
+              href="/blogs"
+              className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
+            >
+              Blogs
+            </Link>
             <Link
               href="/events"
               className={`text-[17px] 2xl:text-[18px] font-medium outline-none z-50`}
