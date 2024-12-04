@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjOaigvGKPIuhnunHKGYQ-A62F9ky2QKk",
-  authDomain: "palmcare-9ced2.firebaseapp.com",
-  projectId: "palmcare-9ced2",
-  storageBucket: "palmcare-9ced2.firebasestorage.app",
-  messagingSenderId: "73289391668",
-  appId: "1:73289391668:web:b82ee6da8762f0a6423461",
+  apiKey: "AIzaSyA2HPXeE2X6NQ6k6IbaEfbiYlZgN0Cf8nI",
+  authDomain: "palmcare-6decb.firebaseapp.com",
+  projectId: "palmcare-6decb",
+  storageBucket: "palmcare-6decb.firebasestorage.app",
+  messagingSenderId: "175524047048",
+  appId: "1:175524047048:web:2b3aeafba2cc9ffe2cddfd",
 };
 
 const app = initializeApp(firebaseConfig);
