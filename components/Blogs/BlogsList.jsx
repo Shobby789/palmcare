@@ -2,28 +2,25 @@
 import { db } from "@/app/firebaseConfig";
 import ThemeContext from "@/context/ThemeContext";
 import { collection, getDocs } from "firebase/firestore";
+import { Link } from "framer";
 import React, { useContext, useEffect, useState } from "react";
 
 const BlogsList = () => {
   const { theme } = useContext(ThemeContext);
   const [blogs, setBlogs] = useState([]);
   const [error, setError] = useState(false);
-  //   console.log("blogs >>>>>>>>", blogs);
+
   const fetchBlogsFromDb = async () => {
     try {
-      // Fetch the documents from the "blogs" collection
       const querySnapshot = await getDocs(collection(db, "blogs"));
 
-      // Map through the documents to extract the data and include the document ID
       const blogs = querySnapshot.docs.map((doc) => ({
-        id: doc.id, // Include the document ID
-        ...doc.data(), // Spread the document data
+        id: doc.id,
+        ...doc.data(),
       }));
 
-      // Return the array of blog objects
       return blogs;
     } catch (error) {
-      // Log and rethrow the error for further handling
       console.error("Error fetching blogs:", error);
       throw error;
     }
@@ -32,7 +29,7 @@ const BlogsList = () => {
   useEffect(() => {
     fetchBlogsFromDb()
       .then((blogs) => {
-        // console.log("Fetched blogs:", blogs);
+        console.log("Fetched blogs:", blogs);
         setBlogs(blogs);
       })
       .catch((error) => {
@@ -40,6 +37,7 @@ const BlogsList = () => {
         setError(true);
       });
   }, []);
+
   return (
     <div
       className={`w-full vertical-padding horizontal-padding ${
@@ -48,15 +46,25 @@ const BlogsList = () => {
     >
       <div className="w-full">
         {blogs && blogs.length > 0 ? (
-          <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-10">
+          <div className="w-full flex flex-col items-start gap-y-10">
             {blogs?.map((blog, index) => {
               return (
-                <div className="w-full" key={index}>
-                  <img src={blog?.blogImage} alt="" />
-                  <h3 className="font-bold text-xl mb-2 mt-4">
-                    {blog?.blogTitle}
-                  </h3>
-                  <p className="text-[14px]">{blog?.blogParagraph}</p>
+                <div className="w-full flex items-start gap-5" key={index}>
+                  <img src={blog?.blogImage} alt="" className="w-[30%]" />
+                  <div className="w-full flex flex-col items-start">
+                    <h3 className="font-bold text-xl mb-2 mt-4">
+                      {blog?.blogTitle}
+                    </h3>
+                    <p className="text-[14px]">
+                      {blog?.blogParagraph.slice(0, 450)}
+                    </p>
+                    <a
+                      href={`/blogs/${blog?.id}`}
+                      className={`text-[15px] 2xl:text-lg px-6 py-3 text-white font-medium bg-primary mt-3 block`}
+                    >
+                      <span>Read More</span>
+                    </a>
+                  </div>
                 </div>
               );
             })}
