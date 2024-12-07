@@ -49,18 +49,33 @@ const BlogsList = () => {
           <div className="w-full flex flex-col items-start gap-y-10">
             {blogs?.map((blog, index) => {
               return (
-                <div className="w-full flex items-start gap-5" key={index}>
-                  <img src={blog?.blogImage} alt="" className="w-[30%]" />
-                  <div className="w-full flex flex-col items-start">
-                    <h3 className="font-bold text-xl mb-2 mt-4">
+                <div
+                  className="w-full flex flex-col lg:flex-row items-start gap-5"
+                  key={index}
+                >
+                  <img
+                    src={blog?.blogImage}
+                    alt=""
+                    className="w-full lg:w-[30%]"
+                  />
+                  <div className="w-full flex flex-col items-start justify-center">
+                    <h3 className="font-bold text-xl 2xl:text-2xl mb-2">
                       {blog?.blogTitle}
                     </h3>
-                    <p className="text-[14px]">
-                      {blog?.blogParagraph.slice(0, 450)}
+                    <p className="text-[14px] lg:hidden">
+                      {blog?.blogParagraph.slice(0, 200)}
+                      {". . . . . ."}
+                    </p>
+                    <p className="text-[14px] hidden 2xl:hidden lg:block">
+                      {blog?.blogParagraph.slice(0, 200)}
+                      {". . . . . ."}
+                    </p>
+                    <p className="text-[14px] hidden 2xl:block">
+                      {blog?.blogParagraph.slice(0, 950)} {". . . . . ."}
                     </p>
                     <a
                       href={`/blogs/${blog?.id}`}
-                      className={`text-[15px] 2xl:text-lg px-6 py-3 text-white font-medium bg-primary mt-3 block`}
+                      className={`text-[15px] px-6 py-3 text-white font-medium bg-primary mt-3 block`}
                     >
                       <span>Read More</span>
                     </a>
