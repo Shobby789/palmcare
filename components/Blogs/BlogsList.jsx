@@ -56,7 +56,7 @@ const BlogsList = () => {
                   <img
                     src={blog?.blogImage}
                     alt=""
-                    className="w-full lg:w-[30%]"
+                    className="w-full lg:w-[30%] 2xl:h-[280px] object-cover"
                   />
                   <div className="w-full flex flex-col items-start justify-center">
                     <h3 className="font-bold text-xl 2xl:text-2xl mb-2">
@@ -71,7 +71,7 @@ const BlogsList = () => {
                       {". . . . . ."}
                     </p>
                     <p className="text-[14px] hidden 2xl:block">
-                      {blog?.blogParagraph.slice(0, 950)} {". . . . . ."}
+                      {blog?.blogParagraph.slice(0, 850)} {". . . . . ."}
                     </p>
                     <a
                       href={`/blogs/${blog?.id}`}
